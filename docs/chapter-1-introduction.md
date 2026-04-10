@@ -195,8 +195,8 @@ Si FreshKargo es capaz de gestionar algunas partes de la distribución y el cont
 ### E. Feature Assumptions
 
 El objetivo principal de FreshKargo es resolver los problemas más importantes en el medio ambiente: control de temperatura, gestión de inventario, seguimiento, registro de transacciones e informes operativos. En Perú es fundamental abordar los problemas de la pérdida y el desperdicio en la cadena de suministro de alimentos, a la vez que los minoristas y mayoristas trabajan de manera sostenible. Una forma adecuada de empezar es ofreciendo productos con un objetivo: mejorar la visibilidad y el control.
-
-### Lean UX Hypothesis Statements
+s
+### 1.2.2.3. Lean UX Hypothesis Statements
 
 - Creemos que lograremos reducir la pérdida de productos y mejorar el control del stock,  
 si empresas distribuidoras de productos perecibles  
