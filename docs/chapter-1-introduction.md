@@ -223,6 +223,10 @@ si empresas del sector alimentario
 logran analizar datos de inventario y distribución  
 con reportes automáticos y análisis de datos.
 
+## 1.2.2.3 LEAN UX CANVAS
+
+<img src="assets/img/Canvas.png" width="100%"/>
+
 ## 1.3. Segmentos Objetivo
 
 En esta sección, se detallarán los segmentos objetivos identificados. 
