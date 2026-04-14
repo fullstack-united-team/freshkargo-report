@@ -1,3 +1,5 @@
+<div style="page-break-after: always"></div>
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -14,16 +16,55 @@ Nuestro equipo multidisciplinario está comprometido con generar impacto en la i
 
 **Visión:** Ser la plataforma líder en la gestión inteligente de inventarios y distribución de productos perecibles a nivel nacional.
 
-
-
 ### 1.1.2. Perfiles de integrantes del equipo
-| Foto | Apellidos y Nombres |
-|:---:|---|
-| ![Josue](../assets/img/team/member1.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta conocimientos en C++, C#, Python y Java. |
-| ![Felix](../assets/img/team/member2.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta conocimientos en desarrollo web y trabajo en equipo. |
-| ![RodrigoSa](../assets/img/team/member3.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta habilidades en programación y análisis de requisitos. |
-| ![Jennifer](../assets/img/team/member4.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta organización, documentación y desarrollo frontend. |
-| ![Rodrigo](../assets/img/team/member5.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta conocimientos técnicos y apoyo en implementación. |
+
+
+\renewcommand{\arraystretch}{1.3}
+
+\begin{longtable}{|>{\centering\arraybackslash}m{0.28\textwidth}|>{\raggedright\arraybackslash}m{0.62\textwidth}|}
+\hline
+\textbf{Foto} & \textbf{Descripción} \\
+\hline
+
+\includegraphics[width=3.6cm,height=2.6 cm,keepaspectratio]{assets/img/team/member1.jpeg}
+&
+\textbf{Josue Francisco Carpio Peña - U202XXXXX}
+
+Soy estudiante de Ingeniería de Software. Aporto conocimientos en C++, C\#, Python y Java. \\
+\hline
+
+\includegraphics[width=3.6cm,height=2.6 cm,keepaspectratio]{assets/img/team/member2.jpeg}
+&
+\textbf{Felix Orlando Becerra Tito - U202XXXXX}
+
+Soy estudiante de Ingeniería de Software. Aporto conocimientos en desarrollo web y trabajo en equipo. \\
+\hline
+
+\includegraphics[width=3.6cm,height=2.6 cm,keepaspectratio]{assets/img/team/member3.jpeg}
+&
+\textbf{Rodrigo Andree Saavedra Flores - U202XXXXX}
+
+Soy estudiante de Ingeniería de Software. Aporto habilidades en programación y análisis de requisitos. \\
+\hline
+
+\includegraphics[width=3.6cm,height=2.6 cm,keepaspectratio]{assets/img/team/member4.jpeg}
+&
+\textbf{Jennifer Yamilet Riveros Vera - U20241C998}
+
+Soy estudiante de Ingeniería de Software. Aporto organización, documentación y desarrollo frontend. \\
+\hline
+
+\includegraphics[width=3.6cm,height=2.6 cm,keepaspectratio]{assets/img/team/member5.jpeg}
+&
+\textbf{Rodrigo Velasquez Velasquez - U202XXXXX}
+
+Soy estudiante de Ingeniería de Software. Aporto conocimientos técnicos y apoyo en implementación. \\
+\hline
+
+\end{longtable}
+
+<div style="page-break-after: always"></div>
+
 ## 1.2. Solution Profile
 
 En esta sección se describen las características principales de la solución propuesta, así como su propuesta de valor y modelo de monetización.
@@ -191,7 +232,7 @@ Si FreshKargo es capaz de gestionar algunas partes de la distribución y el cont
 ### E. Feature Assumptions
 
 El objetivo principal de FreshKargo es resolver los problemas más importantes en el medio ambiente: control de temperatura, gestión de inventario, seguimiento, registro de transacciones e informes operativos. En Perú es fundamental abordar los problemas de la pérdida y el desperdicio en la cadena de suministro de alimentos, a la vez que los minoristas y mayoristas trabajan de manera sostenible. Una forma adecuada de empezar es ofreciendo productos con un objetivo: mejorar la visibilidad y el control.
-s
+
 ### 1.2.2.3. Lean UX Hypothesis Statements
 
 - Creemos que lograremos reducir la pérdida de productos y mejorar el control del stock,  
@@ -219,18 +260,62 @@ si empresas del sector alimentario
 logran analizar datos de inventario y distribución  
 con reportes automáticos y análisis de datos.
 
-## 1.2.2.3 LEAN UX CANVAS
-| **Business Problem** | **Solutions** | **Business Outcomes** |
-| :------------------- | :------------ | :------------------- |
-| El estado actual de la gestión de inventarios y distribución de productos perecibles en Perú se caracteriza por procesos manuales, falta de control en tiempo real y escasa trazabilidad, lo que genera pérdidas por vencimiento, deterioro de productos y descoordinación en la cadena logística. Muchas soluciones existentes no están adaptadas a la realidad de las pymes, ya que son complejas, costosas o no consideran factores clave como el control de temperatura o la gestión de productos sensibles. Nuestro producto busca cerrar esta brecha mediante una plataforma digital accesible que permita controlar el stock en tiempo real, monitorear condiciones de los productos, automatizar procesos y mejorar la toma de decisiones logísticas. Nuestro enfoque inicial será atender a empresas distribuidoras y negocios que manejan productos perecibles. Sabremos que hemos tenido éxito cuando logremos reducir pérdidas por vencimiento, mejorar la precisión del inventario y aumentar la eficiencia operativa en la gestión diaria. | - Sistema de inventario en tiempo real: registro automático de entradas y salidas con actualización constante del stock.<br>- Monitoreo de temperatura y condiciones: control continuo para evitar deterioro de productos perecibles.<br>- Trazabilidad por lote: seguimiento completo desde almacenamiento hasta distribución.<br>- Alertas inteligentes: notificaciones sobre vencimientos, stock bajo o incidencias.<br>- Paneles de control: visualización clara de inventario, movimientos y métricas clave. | - Reducción del 40% en pérdidas por vencimiento o deterioro.<br>- Mejora del 30% en la precisión del inventario.<br>- Reducción del 20% en errores operativos.<br>- Alcanzar 200–400 empresas usuarias en los primeros 6 meses.<br>- Incremento en la eficiencia operativa y toma de decisiones basada en datos. |
+### 1.2.2.4. Lean UX Canvas
 
-| **Users** | **User Outcomes & Benefits** |
-| :-------- | :-------------------------- |
-| - Empresas distribuidoras de productos perecibles: “Nuestro objetivo es reducir pérdidas y mejorar la eficiencia en la gestión del inventario.”<br>- Comerciantes mayoristas y minoristas: “Nuestro objetivo es mantener control del stock y evitar quiebres o sobrestock.”<br>- Encargados de almacén: “Nuestro objetivo es registrar correctamente los movimientos y asegurar el estado de los productos.” | - Encargados de almacén: Control en tiempo real del inventario, registro rápido de productos, alertas de vencimiento y reducción de errores. Indicadores de éxito: menor pérdida de productos y mayor precisión del stock.<br>- Distribuidores: Mayor visibilidad de la cadena logística, reducción de mermas y mejor coordinación en despachos. Seguimiento de productos, alertas y reportes. Menos pérdidas y mayor eficiencia operativa.<br>- Comerciantes: Control del stock disponible, mejor planificación de compras y reducción de quiebres. Paneles de inventario, alertas de reposición y reportes de consumo. Inventario más ordenado y decisiones más acertadas. |
+El Lean UX Canvas de FreshKargo resume el problema de negocio, los usuarios, las soluciones propuestas, los resultados esperados y las hipótesis iniciales del proyecto.
 
-| **Hypotheses** | **What’s the most important thing we need to learn first?** | **What’s the least amount of work we need to do to learn the next most important thing?** |
-| :------------- | :------------------------ | :----------------------- |
-| - Creemos que reduciremos las pérdidas por vencimiento en un 40% si los negocios cuentan con alertas automáticas y control de fechas de caducidad en tiempo real.<br>- Creemos que mejoraremos la precisión del inventario en un 30% si los encargados de almacén registran entradas y salidas mediante un sistema digital centralizado.<br>- Creemos que reduciremos los errores operativos en un 20% si las empresas utilizan una plataforma que automatice procesos de inventario y distribución.<br>- Creemos que alcanzaremos 200–400 empresas usuarias en los primeros 6 meses si ofrecemos una solución accesible, fácil de usar y adaptada a pymes.<br>- Creemos que aumentaremos la eficiencia operativa si los usuarios tienen visibilidad completa del stock y acceso a reportes en tiempo real. | - ¿Los negocios perciben las pérdidas por vencimiento como un problema crítico que justifique implementar un sistema digital?<br>- ¿Los encargados de almacén están dispuestos a cambiar procesos manuales por un sistema digital?<br>- ¿Las empresas valoran el monitoreo en tiempo real y las alertas automáticas como herramientas clave?<br>- ¿La facilidad de uso y accesibilidad influyen directamente en la adopción del sistema?<br>- ¿La falta de visibilidad del inventario es una de las principales causas de ineficiencia operativa? | - Entrevistas y encuestas a distribuidores, comerciantes y encargados de almacén para validar necesidades reales.<br>- Desarrollo de un MVP básico con control de stock y alertas de vencimiento.<br>- Prueba piloto con 1–2 negocios que manejen productos perecibles para medir reducción de pérdidas.<br>- Prototipo funcional de la plataforma y pruebas de usabilidad con usuarios reales. |
+#### Business Problem
+
+La gestión de inventarios y distribución de productos perecibles en Perú aún depende, en muchos casos, de procesos manuales, baja trazabilidad y falta de control en tiempo real. Esto genera pérdidas por vencimiento, deterioro de productos y descoordinación logística.
+
+FreshKargo busca cerrar esta brecha mediante una plataforma digital accesible para empresas distribuidoras y negocios que manejan productos perecibles.
+
+#### Users
+
+- Empresas distribuidoras de productos perecibles.
+- Comerciantes mayoristas y minoristas.
+- Encargados de almacén.
+
+#### Solutions
+
+- Sistema de inventario en tiempo real.
+- Monitoreo de temperatura y condiciones de conservación.
+- Trazabilidad por lote.
+- Alertas inteligentes sobre vencimientos, stock bajo o incidencias.
+- Paneles de control con métricas operativas.
+
+#### Business Outcomes
+
+- Reducir pérdidas por vencimiento o deterioro.
+- Mejorar la precisión del inventario.
+- Disminuir errores operativos.
+- Alcanzar entre 200 y 400 empresas usuarias en los primeros 6 meses.
+- Mejorar la toma de decisiones basada en datos.
+
+#### User Outcomes & Benefits
+
+Los usuarios podrán controlar su inventario en tiempo real, reducir pérdidas, recibir alertas preventivas y mejorar la planificación de compras, almacenamiento y distribución.
+
+#### Hypotheses
+
+- Creemos que reduciremos las pérdidas por vencimiento si los negocios cuentan con alertas automáticas y control de fechas de caducidad.
+- Creemos que mejoraremos la precisión del inventario si los encargados de almacén registran entradas y salidas mediante un sistema digital.
+- Creemos que reduciremos errores operativos si las empresas usan una plataforma que automatice procesos de inventario y distribución.
+- Creemos que aumentaremos la eficiencia operativa si los usuarios tienen visibilidad completa del stock y reportes en tiempo real.
+
+#### What’s the most important thing we need to learn first?
+
+- Si los negocios perciben las pérdidas por vencimiento como un problema crítico.
+- Si los encargados de almacén están dispuestos a cambiar procesos manuales por digitales.
+- Si las empresas valoran el monitoreo en tiempo real y las alertas automáticas.
+
+#### What’s the least amount of work we need to do to learn the next most important thing?
+
+- Realizar entrevistas a distribuidores, comerciantes y encargados de almacén.
+- Desarrollar un MVP básico con control de stock y alertas de vencimiento.
+- Probar el prototipo con usuarios reales.
+
+![Lean UX Canvas de FreshKargo](../assets/img/Canvas.png){ width=90% }
 <img src="../assets/img/Canvas.png" width="100%"/>
 
 ## 1.3. Segmentos Objetivo

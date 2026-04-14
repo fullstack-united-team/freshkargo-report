@@ -1,8 +1,9 @@
+# Capítulo II: Requirements Elicitation & Analysis
 ## 2.1 Competidores
 
 En esta sección se identifican y describen los principales competidores que ofrecen soluciones digitales relacionadas con la gestión de inventarios, especialmente en el manejo de productos perecibles.
 
----
+
 
 ### Odoo
 
@@ -21,7 +22,7 @@ Funciona bajo un modelo *freemium*, donde ofrece una versión básica gratuita y
 - Puede ser complejo de implementar  
 - Requiere capacitación para su uso completo  
 
----
+
 
 ### Reflex Solution
 
@@ -40,7 +41,7 @@ Software como servicio (*SaaS*) basado en suscripción empresarial.
 - Alto costo  
 - Enfocado principalmente en grandes empresas  
 
----
+
 
 ### Slim4
 
@@ -59,7 +60,7 @@ Software empresarial bajo licencia o suscripción.
 - No es una solución integral como un ERP  
 - Requiere integración con otros sistemas  
 
----
+
 
 ### Conclusión
 
@@ -76,26 +77,69 @@ Luego del análisis realizado, observamos que FreshKargo tiene una propuesta dis
 | **Fortalezas (F)** <br><br> 1. Especialización en productos perecibles. <br> 2. Conocimiento del mercado peruano. <br> 3. Monitoreo en tiempo real, alertas y trazabilidad. <br> 4. Acompañamiento directo al cliente. | **Estrategia FO — Ofensivas** <br><br> 1. Aprovechar que muchas distribuidoras todavía trabajan de forma manual para presentar FreshKargo como una solución más específica para su realidad. <br> 2. Resaltar funciones concretas como control de vencimientos, trazabilidad y alertas, ya que son aspectos que no siempre cubren los sistemas genéricos. <br> 3. Ingresar primero a pequeñas y medianas empresas con una propuesta accesible y fácil de adoptar. | **Estrategia FA — Defensivas** <br><br> 1. Diferenciarse de competidores más grandes mostrando que FreshKargo está hecho para perecibles y no para cualquier tipo de negocio. <br> 2. Reforzar como ventaja el soporte cercano y el acompañamiento al cliente durante el uso del sistema. <br> 3. Enfatizar que la propuesta no compite solo por precio, sino por adaptación al problema real del sector. |
 | **Debilidades (D)** <br><br> 1. Proyecto en etapa inicial. <br> 2. Falta de casos implementados y documentados. <br> 3. Menor reconocimiento frente a marcas ya posicionadas. | **Estrategia DO — Reorientación** <br><br> 1. Realizar pilotos con distribuidoras pequeñas para obtener experiencia real y primeros resultados comprobables. <br> 2. Usar esos primeros casos como respaldo para generar mayor confianza en nuevos clientes. <br> 3. Aprovechar que el sector todavía tiene poca oferta especializada a nivel local para ganar espacio desde ahora. | **Estrategia DA — Supervivencia** <br><br> 1. Evitar competir directamente con plataformas grandes que apuntan a empresas más complejas o de mayor escala. <br> 2. Enfocarse en un nicho específico donde la especialización sí marque diferencia. <br> 3. Reducir la desconfianza inicial con demostraciones, pruebas y acompañamiento constante. |
 
+<div style="page-break-after: always"></div>
+
 ## 2.1. Competidores.
 
-| Competitive Analysis Landscape  |  |                                                                                                                                                                                                                                           |                                                                                                                                                                                                |                                                                                                                                                                           |                                                                                                                                                                                     |
-| ----- | ----- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **¿Por qué llevar a cabo este análisis?** | Comparar soluciones tecnológicas de gestión de inventarios y distribución de productos perecibles para identificar ventajas competitivas en eficiencia operativa, reducción de pérdidas, trazabilidad y nivel de especialización. |                                                                                                                                                                                                                                           |                                                                                                                                                                                                |                                                                                                                                                                           |                                                                                                                                                                                     |
-|  |  | **Freshkargo**                                                                                                                                                                                                                               | **Odoo**                                                                                                                                                                                    | **Reflex**                                                                                                                                                               | **Slim4**                                                                                                                                                                      |
-|  |  | ![cap2](../assets/img/freshkargo.png)                                                                                                                                                                                                   | ![cap2](../assets/img/odoo.png)                                                                                                                                                        | ![cap2](../assets/img/reflex.png)                                                                                                                                   | ![cap2](../assets/img/slim.png)                                                                                                                                          |
-| **Perfil** | **Overview** | Plataforma tecnológica peruana orientada a la gestión de inventarios y distribución de productos perecibles. Integra monitoreo de temperatura, trazabilidad por lote y control en tiempo real para reducir pérdidas y mejorar la eficiencia operativa. | Plataforma ERP modular que centraliza inventario, ventas, compras y contabilidad en un solo sistema, permitiendo gestionar diferentes áreas del negocio desde una única herramienta. | Plataforma global especializada en la gestión de cadenas de suministro mediante inteligencia artificial, enfocada en optimizar la demanda y la distribución en grandes empresas. | Software europeo enfocado en la optimización de inventarios y previsión de demanda, dirigido a empresas con operaciones logísticas estructuradas. |
-|  | **Ventaja competitiva   ¿Qué valor ofrece a los clientes?** | Solución especializada en productos perecibles que permite controlar temperatura, reducir mermas y mejorar la trazabilidad en todo el proceso logístico. | Integración completa de procesos empresariales a bajo costo, con facilidad de uso y rápida implementación. | Uso de inteligencia artificial para anticipar la demanda y optimizar la disponibilidad de productos en múltiples puntos de venta. | Alta precisión en la planificación de inventarios y reducción de pérdidas mediante análisis de demanda. |
-| **Perfil de Marketing** | **Mercado objetivo** | Empresas distribuidoras de productos perecibles en Perú, especialmente pymes con bajo nivel de digitalización. | Empresas de cualquier tamaño que buscan integrar sus operaciones en una sola plataforma. | Grandes empresas del sector retail y logística con operaciones a gran escala. | Empresas medianas y grandes con cadenas de suministro estructuradas. |
-|  | **Estrategias de marketing** | Enfoque en especialización y cercanía con el cliente, priorizando la confianza y el conocimiento del sector. | Uso de planes gratuitos, marketing digital y red de partners para expandirse en distintos mercados. | Ventas directas a grandes cuentas respaldadas por su posicionamiento global y tecnología avanzada. | Estrategia basada en resultados y casos de éxito para captar empresas con necesidades complejas. |
-| **Perfil de Producto** | **Productos & Servicios** | Sistema de gestión de inventarios con monitoreo de temperatura, alertas automáticas, trazabilidad y análisis de datos para la toma de decisiones. | Plataforma con múltiples módulos integrados que incluyen inventario, ventas, CRM y contabilidad. | Plataforma avanzada con inteligencia artificial para previsión de demanda, reposición automática y optimización logística. | Herramientas de planificación de demanda, optimización de stock y automatización del abastecimiento. |
-|  | **Precios & Costos** | Planes escalables según el tamaño de la empresa, accesibles para negocios pequeños. | Modelo freemium con opciones de pago según funcionalidades. | Precio bajo cotización, orientado a grandes empresas. | Precio bajo cotización por proyecto. |
-|  | **Canales de distribución (Web y/o Móvil)** | Plataforma web con proyección a uso móvil. | Web y aplicaciones móviles disponibles. | Plataforma cloud integrada con sistemas empresariales. | Plataforma web integrable con otros sistemas. |
-| **Análisis FODA** | **Fortalezas** | Especialización en perecibles y adaptación al contexto local, permitiendo una solución más precisa. | Bajo costo y facilidad de uso con múltiples funcionalidades. | Tecnología avanzada y liderazgo global en el sector. | Experiencia comprobada en optimización de inventarios. |
-|  | **Oportunidades** | Crecimiento de la digitalización en el sector logístico peruano. | Expansión de pymes que requieren soluciones integradas. | Mayor demanda de soluciones basadas en inteligencia artificial. | Empresas en crecimiento que necesitan optimizar su cadena de suministro. |
-|  | **Debilidades** | Poca trayectoria y casos documentados en comparación con competidores grandes. | No especializado en productos perecibles. | Alto costo y complejidad de implementación. | Implementación costosa y compleja para empresas pequeñas. |
-|  | **Amenazas** | Entrada de competidores con mayor experiencia y recursos. | Aparición de soluciones más especializadas. | Nuevas startups más ágiles en el mercado. | Alternativas más económicas con menor tiempo de implementación. |
+### 2.1.1. Análisis competitivo
 
+El análisis competitivo permite comparar a FreshKargo con soluciones existentes de gestión de inventarios y distribución, identificando oportunidades de diferenciación en el manejo de productos perecibles.
 
+#### FreshKargo
+
+**Overview:** Plataforma peruana orientada a la gestión de inventarios y distribución de productos perecibles.
+
+**Ventaja competitiva:** Especialización en productos perecibles, trazabilidad por lote, alertas inteligentes y monitoreo en tiempo real.
+
+**Mercado objetivo:** Empresas distribuidoras, comerciantes mayoristas y minoristas que manejan productos perecibles.
+
+**Fortalezas:** Adaptación al contexto local, enfoque específico en perecibles y facilidad de uso.
+
+**Debilidades:** Proyecto en etapa inicial y menor reconocimiento frente a soluciones ya posicionadas.
+
+---
+
+#### Odoo
+
+**Overview:** ERP modular que integra inventario, ventas, compras, CRM y contabilidad.
+
+**Ventaja competitiva:** Plataforma integral, adaptable y con amplia comunidad.
+
+**Mercado objetivo:** Empresas de diferentes tamaños que buscan centralizar sus procesos.
+
+**Fortalezas:** Bajo costo inicial, modularidad y variedad de funciones.
+
+**Debilidades:** No está especializado en productos perecibles y puede requerir configuración técnica.
+
+---
+
+#### Reflex Solution
+
+**Overview:** Plataforma enfocada en optimización de cadena de suministro mediante inteligencia artificial.
+
+**Ventaja competitiva:** Predicción de demanda, optimización logística y alta escalabilidad.
+
+**Mercado objetivo:** Grandes empresas del sector retail y logística.
+
+**Fortalezas:** Tecnología avanzada y enfoque empresarial.
+
+**Debilidades:** Alto costo y complejidad para pequeñas empresas.
+
+---
+
+#### Slim4
+
+**Overview:** Solución especializada en planificación de demanda y optimización de inventarios.
+
+**Ventaja competitiva:** Análisis predictivo y reducción de sobrestock o quiebres de stock.
+
+**Mercado objetivo:** Empresas medianas y grandes con operaciones logísticas estructuradas.
+
+**Fortalezas:** Especialización en inventarios y experiencia en supply chain.
+
+**Debilidades:** Implementación costosa y menor accesibilidad para pymes.
+
+---
 
 ## 2.2 Entrevistas
 
@@ -202,7 +246,7 @@ En esta sección presentamos los registros de las entrevistas que hicimos para c
     * **Distrito:** San Luis
     * **Rol:** Jefe de Operaciones y Logística (Sector alimenticio)
     * **Evidencia:**  
-      **![](../assets/img/evidencia.png)**
+      **![](../assets/img/evidenciaRodrigoSa.png)**
     * **Video URL:**  
       [**Entrevista grabada – Microsoft Stream**](https://upcedupe-my.sharepoint.com/:v:/r/personal/u20241d811_upc_edu_pe/Documents/0410.mp4?csf=1&web=1&e=Cu6fO3&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
     * **Timing:** 0:40 - 10:57
@@ -219,6 +263,32 @@ En esta sección presentamos los registros de las entrevistas que hicimos para c
 
         Estas funcionalidades ayudarían a prevenir pérdidas, mejorar la distribución y tomar decisiones con mayor rapidez.
 
+
+* **Entrevista #2:**
+
+    * **Nombre:** Valeria
+    * **Apellidos:** Espinoza
+    * **Edad:** 31 años
+    * **Distrito:** Lurín
+    * **Rol:** Jefa de Operaciones Logísticas
+    * **Sector:** Alimenticio, especializada en lácteos, embutidos y productos cárnicos procesados.
+    * **Evidencia:**
+  
+    \begin{center}
+    \includegraphics[width=12cm]{assets/img/evidenciaValeria.png}
+    \end{center}
+    * **Video URL:**
+
+      [**Entrevista grabada – Microsoft Stream**](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c998_upc_edu_pe/IQD9H_jvvTpHTIbnUxEbXtOIAQqcGrGL8klUAv2XmqQdoFs)
+
+    * **Timing:** 00:06 - 09:55
+
+    * **Resumen:**
+
+      Valeria Espinoza es una profesional de 31 años que se desempeña como Jefa de Operaciones Logísticas en una empresa del sector alimenticio ubicada en Lurín. Su experiencia está relacionada con la gestión logística de productos perecibles y operaciones asociadas a cadena de frío.
+      La entrevistada señala que actualmente combinan un ERP básico con hojas de cálculo para controlar lotes y fechas de vencimiento. Esto genera desfases entre el stock real y el registrado, lo cual puede provocar errores de despacho, pérdidas por vencimiento y problemas con clientes.
+      También menciona que el monitoreo de temperatura todavía depende de registros manuales, especialmente durante el transporte. Esto dificulta detectar fallas en tiempo real y prevenir pérdidas antes de que el producto llegue a destino.
+      Para Valeria, FreshKargo sería útil si permite automatizar el control de inventario, alertar productos próximos a vencer, monitorear temperatura en tiempo real y confirmar entregas digitalmente.
 
 ### 2.2.3 Análisis de entrevistas
 

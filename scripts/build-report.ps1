@@ -13,11 +13,16 @@ $files = @(
     "docs/04-table-of-contents.md",
     "docs/05-student-outcome.md",
     "docs/chapter-1-introduction.md",
-    "docs/chapter-2-requirements-elicitation.md"
+    "docs/chapter-2-requirements-elicitation.md",
+    "docs/chapter-3-requirements-specification.md",
+    "docs/chapter-4-product-design.md",
+    "docs/chapter-5-implementation-validation-deployment.md",
+    "docs/conclusions.md",
+    "docs/bibliography.md",
+    "docs/annexes.md"
 )
 
 pandoc @files `
-    --file-scope `
     --from markdown `
     --resource-path=".;docs" `
     --metadata-file pandoc/metadata.yaml `
