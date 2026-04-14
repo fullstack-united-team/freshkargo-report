@@ -17,17 +17,13 @@ Nuestro equipo multidisciplinario está comprometido con generar impacto en la i
 
 
 ### 1.1.2. Perfiles de integrantes del equipo
-
-
 | Foto | Apellidos y Nombres |
-| --- | --- |
-| ![miembro1](../assets/img/member1.jpg) | **Nombre Apellido - uXXXXXXXX** Descripción del integrante. |
-| ![miembro2](../assets/img/member2.jpg) | **Nombre Apellido - uXXXXXXXX** Descripción del integrante. |
-| ![miembro3](../assets/img/member3.jpg) | **Nombre Apellido - uXXXXXXXX** Descripción del integrante. |
-| ![miembro4](../assets/img/member4.jpg) | **Nombre Apellido - uXXXXXXXX** Descripción del integrante. |
-| ![miembro5](../assets/img/member5.jpg) | **Nombre Apellido - uXXXXXXXX** Descripción del integrante. |
-
-
+|:---:|---|
+| ![Josue](../assets/img/team/member1.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta conocimientos en C++, C#, Python y Java. |
+| ![Felix](../assets/img/team/member2.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta conocimientos en desarrollo web y trabajo en equipo. |
+| ![RodrigoSa](../assets/img/team/member3.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta habilidades en programación y análisis de requisitos. |
+| ![Jennifer](../assets/img/team/member4.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta organización, documentación y desarrollo frontend. |
+| ![Rodrigo](../assets/img/team/member5.jpeg){ width=2.5cm } | **xxxx - xxxxxx**<br>Estudiante de Ingeniería de Software. Aporta conocimientos técnicos y apoyo en implementación. |
 ## 1.2. Solution Profile
 
 En esta sección se describen las características principales de la solución propuesta, así como su propuesta de valor y modelo de monetización.
