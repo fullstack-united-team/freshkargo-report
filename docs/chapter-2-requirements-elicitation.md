@@ -257,32 +257,24 @@ Después de identificar los eventos, estos se organizaron en flujos lógicos que
 - **Fecha de vencimiento:** Fecha límite para el consumo del producto.  
 - **Fecha de ingreso:** Momento en que el producto entra al inventario.  
 - **Cantidad disponible:** Stock actual del producto o lote.  
-
-**Estado del producto**
-- Fresco
-- Próximo a vencer
-- Vencido
-
-**Condición de almacenamiento:** Temperatura, humedad u otros requisitos.  
-**Ingreso de productos:** Registro de nuevos productos/lotes al sistema.  
-
-**Rotación de inventario**
-**FIFO (First In, First Out):** Primero en entrar, primero en salir.  
-**FEFO (First Expired, First Out):** Primero en vencer, primero en salir.  
-
-**Control de vencimientos:** Monitoreo de fechas para evitar pérdidas.  
-**Despacho:** Salida de productos hacia clientes o puntos de venta.  
-**Reabastecimiento:** Ingreso de nuevos productos al inventario.  
-**Producto por vencer:** Producto cercano a su fecha de vencimiento.  
-**Producto vencido:** Producto ya no apto para consumo.  
-**Stock bajo:** Cantidad mínima alcanzada.  
-**Merma:** Pérdida de producto.  
-**Alerta de conservación:** Condiciones inadecuadas.  
-**Administrador:** Gestiona el sistema completo.  
-**Encargado de almacén:** Controla inventario y almacenamiento.  
-**Distribuidor:** Maneja la salida y entrega de productos.  
-**Proveedor:** Suministra los productos perecibles.  
-**Cadena de frío:** Control de temperatura para productos sensibles.  
-**Trazabilidad:** Seguimiento del producto desde su origen hasta su destino.  
-**Vida útil:** Tiempo en el que el producto es apto para consumo.  
-**Rotación de stock:** Movimiento de productos dentro del inventario.  
+- **Condición de almacenamiento:** Temperatura, humedad u otros requisitos.  
+- **Ingreso de productos:** Registro de nuevos productos/lotes al sistema.  
+- **Rotación de inventario**
+- **FIFO (First In, First Out):** Primero en entrar, primero en salir.  
+- **FEFO (First Expired, First Out):** Primero en vencer, primero en salir.  
+- **Control de vencimientos:** Monitoreo de fechas para evitar pérdidas.  
+- **Despacho:** Salida de productos hacia clientes o puntos de venta.  
+- **Reabastecimiento:** Ingreso de nuevos productos al inventario.  
+- **Producto por vencer:** Producto cercano a su fecha de vencimiento.  
+- **Producto vencido:** Producto ya no apto para consumo.  
+- **Stock bajo:** Cantidad mínima alcanzada.  
+- **Merma:** Pérdida de producto.  
+- **Alerta de conservación:** Condiciones inadecuadas.  
+- **Administrador:** Gestiona el sistema completo.  
+- **Encargado de almacén:** Controla inventario y almacenamiento.  
+- **Distribuidor:** Maneja la salida y entrega de productos.  
+- **Proveedor:** Suministra los productos perecibles.  
+- **Cadena de frío:** Control de temperatura para productos sensibles.  
+- **Trazabilidad:** Seguimiento del producto desde su origen hasta su destino.  
+- **Vida útil:** Tiempo en el que el producto es apto para consumo.  
+- **Rotación de stock:** Movimiento de productos dentro del inventario.  
