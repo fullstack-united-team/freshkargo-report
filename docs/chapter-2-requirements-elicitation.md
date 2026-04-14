@@ -1,3 +1,69 @@
+## 2.1 Competidores
+
+En esta sección se identifican y describen los principales competidores que ofrecen soluciones digitales relacionadas con la gestión de inventarios, especialmente en el manejo de productos perecibles.
+
+---
+
+### Odoo
+
+**Descripción:**  
+Odoo es un software de código abierto que integra múltiples módulos empresariales, incluyendo gestión de inventarios, ventas y contabilidad.
+
+**Modelo de negocio:**  
+Funciona bajo un modelo *freemium*, donde ofrece una versión básica gratuita y módulos adicionales de pago bajo suscripción.
+
+**Fortalezas:**
+- Plataforma integral  
+- Alta personalización  
+- Amplia comunidad y soporte  
+
+**Debilidades:**
+- Puede ser complejo de implementar  
+- Requiere capacitación para su uso completo  
+
+---
+
+### Reflex Solution
+
+**Descripción:**  
+Es una plataforma avanzada enfocada en la optimización de la cadena de suministros, especialmente en retail. Utiliza inteligencia artificial para mejorar la planificación de demanda y la gestión de inventarios.
+
+**Modelo de negocio:**  
+Software como servicio (*SaaS*) basado en suscripción empresarial.
+
+**Fortalezas:**
+- Uso de inteligencia artificial para predicción de demanda  
+- Optimización de inventarios en tiempo real  
+- Alta escalabilidad  
+
+**Debilidades:**
+- Alto costo  
+- Enfocado principalmente en grandes empresas  
+
+---
+
+### Slim4
+
+**Descripción:**  
+Slim4 es una solución especializada en la optimización de inventarios y planificación de la cadena de suministro. Está diseñada para mejorar la disponibilidad de productos y reducir desperdicios.
+
+**Modelo de negocio:**  
+Software empresarial bajo licencia o suscripción.
+
+**Fortalezas:**
+- Enfoque especializado en inventarios  
+- Reducción de sobrestock y quiebres  
+- Análisis predictivo  
+
+**Debilidades:**
+- No es una solución integral como un ERP  
+- Requiere integración con otros sistemas  
+
+---
+
+### Conclusión
+
+Los competidores analizados presentan soluciones robustas orientadas a la gestión de inventarios, destacando principalmente en la automatización, análisis de datos y optimización de la cadena de suministro. Sin embargo, la mayoría de estas herramientas están orientadas a medianas y grandes empresas, lo que abre una oportunidad para desarrollar una solución más accesible, simple y enfocada en pequeñas empresas o distribuidoras locales de productos perecibles.
 
 ## 2.1.2 Estrategias y tácticas frente a competidores
 
