@@ -348,6 +348,26 @@ El journey de Ricardo Mendoza representa el proceso actual de un comerciante min
 
 ![User Journey Map Ricardo Mendoza](../assets/img/ux/user-journey-maps/user-journey-ricardo-mendoza.png){ width=95% }
 
+\clearpage
+
+### 2.3.4. Empathy Mapping {#empathy-mapping}
+
+En esta sección se presentan los Empathy Maps elaborados en UXPressia para cada User Persona. Estos artefactos permiten comprender qué piensan, sienten, dicen, ven, escuchan y hacen los usuarios dentro de su contexto actual. Además, ayudan a identificar sus principales dolores y beneficios esperados frente a una solución como FreshKargo.
+
+#### Empathy Map 1: Marcela Torres
+
+El Empathy Map de Marcela Torres representa la perspectiva de una jefa de operaciones logísticas en una empresa distribuidora de productos perecibles. Su contexto evidencia preocupación por la falta de visibilidad del stock, el control manual de lotes, la detección tardía de fallas en la cadena de frío y la presión por reducir pérdidas operativas.
+
+![Empathy Map Marcela Torres](../assets/img/ux/empathy-maps/empathy-map-marcela-torres.png){ width=90% }
+
+#### Empathy Map 2: Ricardo Mendoza
+
+El Empathy Map de Ricardo Mendoza representa la perspectiva de un comerciante minorista que administra un minimarket. Su contexto evidencia preocupación por el control manual de vencimientos, la reposición de mercadería, la falta de alertas de stock bajo y las pérdidas económicas ocasionadas por productos vencidos o dañados.
+
+![Empathy Map Ricardo Mendoza](../assets/img/ux/empathy-maps/empathy-map-ricardo-mendoza.png){ width=90% }
+
+\clearpage
+
 ## 2.4 Big Picture Event Storming
 
 ### Step 1 – Free Exploration

@@ -30,6 +30,7 @@
 - [2.3. Needfinding](#needfinding)
   - [2.3.1. User Person](#user-person)
   - [2.3.3. User Journey Mapping](#user-journey-mapping)
+  - [2.3.4. Empathy Mapping](#empathy-mapping)
 - [2.4. Big Picture Event Storming](#big-picture-event-storming)
 - [2.5. Ubiquitous Language](#ubiquitous-language)
 
