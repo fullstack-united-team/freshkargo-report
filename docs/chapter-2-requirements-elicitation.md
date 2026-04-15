@@ -290,6 +290,20 @@ En esta sección presentamos los registros de las entrevistas que hicimos para c
       También menciona que el monitoreo de temperatura todavía depende de registros manuales, especialmente durante el transporte. Esto dificulta detectar fallas en tiempo real y prevenir pérdidas antes de que el producto llegue a destino.
       Para Valeria, FreshKargo sería útil si permite automatizar el control de inventario, alertar productos próximos a vencer, monitorear temperatura en tiempo real y confirmar entregas digitalmente.
 
+* **Entrevista #3:**
+    * **Nombre:** Fabrizio
+    * **Apellidos:** Delgado
+    * **Edad:** 22 años
+    * **Distrito:** Cayma, Arequipa
+    * **Rol:** Supervisar
+    * **Sector:** Venta alimentaria, especialmente en vegetales. 
+    * **Evidencia:**
+    
+    * **Resumen:**
+    Fabrizio Delgado joven de 22 años que tiene una tienda minorista en la ciudad de Arequipa en el distrito de cayma, que tiene como cargo supervisar los trabajadores en su tienda para que puedan cumplir con sus labores. Las ventas que tiene con más frecuencia son los vegetales y las frutas.
+    La entrevista que se realizó nos damos cuenta que en las bodegas se mantiene el registro tradicional, el lápiz y papel, para poder llevar a cabo su logística en su tienda, tiene que realizar registros manuales, pasar por cada estanteria para poder visualizar si las frutas no se están malogrando y/o los vegetales también. Lo que podemos notar que el registro manual puede llevar a un momento tedioso porque aveces no se puden dar cuenta de que si alguna fruta o verdura esta en buenas condiciones, muchas veces sus trabajadores ni revisan por el cual aveces se le puede llegar a echar a perder gran parte de lo que tiene que vender. 
+    Es por eso que nos mencioan que, FreshKargo sería una buena opción para su tienda/bodega porque no tendría que depender de los trabajadores en sí o él estar constantemente en la tienda, sino que de por sí en una aplicación le ayudaría a quitar ese gran peso y así que fluya su negocio sin tener que estar presente en el local tan frecuentemente. 
+
 ### 2.2.3 Análisis de entrevistas
 
 El análisis de entrevistas permitió conocer de manera más cercana las necesidades y preocupaciones de los usuarios. Gracias a ello, fue posible identificar qué funciones serían realmente útiles dentro de la aplicación y qué aspectos debían priorizarse para mejorar la comunicación y el acceso a la información.
