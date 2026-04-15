@@ -28,6 +28,7 @@
     - [2.2.2. Registro de entrevistas](#registro-de-entrevistas)
     - [2.2.3. Análisis de entrevistas](#análisis-de-entrevistas)
 - [2.3. Needfinding](#needfinding)
+  - [2.3.1. User Person](#user-person)
 - [2.4. Big Picture Event Storming](#big-picture-event-storming)
 - [2.5. Ubiquitous Language](#ubiquitous-language)
 

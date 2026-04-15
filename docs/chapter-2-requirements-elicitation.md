@@ -314,7 +314,21 @@ El análisis de entrevistas permitió conocer de manera más cercana las necesid
 
 En esta etapa se buscó entender mejor las necesidades reales de los usuarios a partir de las entrevistas realizadas. Esto permitió identificar los principales problemas que enfrentan en su operación diaria y obtener información clave para orientar el desarrollo de una solución más útil y alineada a su realidad.
 
+### 2.3.1. User Person {#user-person}
 
+En esta sección se presentan los User Personas elaborados en UXPressia para representar a los principales segmentos objetivo de FreshKargo. Estos arquetipos fueron construidos a partir del análisis de entrevistas, necesidades identificadas y características comunes de los usuarios vinculados con la gestión de inventarios y distribución de productos perecibles.
+
+#### User Persona 1: Marcela Torres
+
+Marcela Torres representa al segmento de empresas distribuidoras de productos perecibles. Su perfil corresponde a una jefa de operaciones logísticas que necesita controlar inventarios, fechas de vencimiento, rutas de distribución y condiciones de cadena de frío. Sus principales necesidades están relacionadas con la visibilidad del stock en tiempo real, alertas preventivas y trazabilidad durante el transporte.
+
+![User Persona Marcela Torres](../assets/img/ux/user-person/user-persona-marcela-torres.png){ height=18cm }
+
+#### User Persona 2: Ricardo Mendoza
+
+Ricardo Mendoza representa al segmento de comerciantes mayoristas y minoristas. Su perfil corresponde a un dueño de minimarket que necesita controlar productos perecibles, revisar fechas de vencimiento, coordinar compras con proveedores y evitar pérdidas por productos vencidos o dañados. Sus principales necesidades están relacionadas con el control simple del inventario, alertas de stock bajo y avisos de productos próximos a vencer.
+
+![User Persona Ricardo Mendoza](../assets/img/ux/user-person/user-persona-ricardo-mendoza.png){ height=18cm }
 
 ## 2.4 Big Picture Event Storming
 
