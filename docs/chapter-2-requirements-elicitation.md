@@ -330,6 +330,24 @@ Ricardo Mendoza representa al segmento de comerciantes mayoristas y minoristas. 
 
 ![User Persona Ricardo Mendoza](../assets/img/ux/user-person/user-persona-ricardo-mendoza.png){ height=18cm }
 
+\clearpage
+
+### 2.3.3. User Journey Mapping {#user-journey-mapping}
+
+En esta sección se presentan los User Journey Maps elaborados en UXPressia para cada User Persona definido. Estos mapas representan la experiencia actual de los usuarios, es decir, la situación As-Is antes de la implementación de FreshKargo. El objetivo es identificar las etapas, canales, problemas, emociones y oportunidades de mejora presentes en la gestión de inventarios y productos perecibles.
+
+#### User Journey Map 1: Marcela Torres
+
+El journey de Marcela Torres representa el proceso actual de una jefa de operaciones logísticas en una empresa distribuidora de productos perecibles. Su recorrido considera actividades como la planificación de stock, registro de productos, coordinación de despachos, supervisión del transporte y resolución de incidencias. Durante este proceso, se identifican problemas relacionados con la falta de visibilidad del inventario, registros manuales, dependencia de llamadas y detección tardía de fallas en la cadena de frío.
+
+![User Journey Map Marcela Torres](../assets/img/ux/user-journey-maps/user-journey-marcela-torres.png){ width=95% }
+
+#### User Journey Map 2: Ricardo Mendoza
+
+El journey de Ricardo Mendoza representa el proceso actual de un comerciante minorista que administra un minimarket. Su recorrido considera la revisión de productos, registro de compras, control de ventas, reposición de mercadería y resolución de pérdidas. Durante este proceso, se identifican problemas como la revisión manual de vencimientos, falta de alertas de stock bajo, compras innecesarias y pérdidas por productos vencidos.
+
+![User Journey Map Ricardo Mendoza](../assets/img/ux/user-journey-maps/user-journey-ricardo-mendoza.png){ width=95% }
+
 ## 2.4 Big Picture Event Storming
 
 ### Step 1 – Free Exploration
