@@ -2,7 +2,7 @@
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
-![](../assets/img/UPC.jpeg){ width=2cm }
+![](../assets/img/logo-upc.png){ width=2cm }
 
 **Facultad de Ingeniería**
 
