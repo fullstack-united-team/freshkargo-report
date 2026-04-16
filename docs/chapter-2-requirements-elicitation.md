@@ -306,8 +306,103 @@ En esta sección presentamos los registros de las entrevistas que hicimos para c
 
 ### 2.2.3 Análisis de entrevistas
 
-El análisis de entrevistas permitió conocer de manera más cercana las necesidades y preocupaciones de los usuarios. Gracias a ello, fue posible identificar qué funciones serían realmente útiles dentro de la aplicación y qué aspectos debían priorizarse para mejorar la comunicación y el acceso a la información.
+En esta sección se analiza la información obtenida a partir de las entrevistas
+realizadas a los segmentos objetivo de FreshKargo. A través de sus respuestas 
+fue posible identificar problemas reales en la gestión de productos perecibles, así 
+como también las expectativas que tienen frente a una posible solución digital. 
+Este análisis permite entender mejor cómo trabajan actualmente, qué dificultades 
+enfrentan en su día a día y de qué manera una herramienta como FreshKargo podría 
+aportar valor en sus operaciones.
 
+## Segmento 1: Empresas distribuidoras de productos perecibles
+Análisis de Características Objetivas y Subjetivas:
+El análisis de este segmento evidencia que, aunque las empresas 
+entrevistadas ya utilizan algunas herramientas digitales, su gestión sigue
+siendo parcialmente manual y poco integrada. Como se observa en el gráfico a
+continuación, el 100% de los entrevistados utiliza sistemas mixtos, combinando ERP, 
+hojas de cálculo y registros manuales. Asimismo, el 100% presenta problemas de visibilidad
+en tiempo real del stock y de las condiciones de temperatura durante la operación. 
+A nivel subjetivo, ambos entrevistados coinciden en valorar una solución práctica y
+fácil de implementar, por lo que el 100% considera importante contar con alertas de 
+vencimiento y monitoreo en tiempo real. Además, el 50% menciona de forma explícita la
+necesidad de trazabilidad por GPS y el 50% resalta la confirmación digital de entregas
+como una funcionalidad relevante.
+
+\begin{center}
+\includegraphics[width=18cm]{assets/img/grafi1.png}
+\end{center}
+
+
+Los gráficos muestran que las empresas distribuidoras entrevistadas comparten una 
+dependencia de herramientas no integradas y una falta de visibilidad en tiempo
+real sobre el estado de sus productos perecibles. Al mismo tiempo, existe una 
+valoración clara hacia una solución digital que permita automatizar alertas,
+monitorear temperatura y mejorar la trazabilidad de la operación.
+
+## Segmento 2: Tiendas y bodegas con productos perecibles
+Análisis de Características Objetivas y Subjetivas:
+El análisis del segundo segmento muestra una realidad todavía más manual que 
+la observada en las empresas distribuidoras. Como se aprecia en el gráfico, 
+el 100% de los hallazgos en este segmento se relaciona con registros físicos,
+supervisión presencial constante y revisión manual del estado de los productos. 
+En este caso, la operación depende directamente de la observación humana para 
+detectar frutas o verduras en mal estado, lo que aumenta el riesgo de pérdidas. 
+A nivel subjetivo, el entrevistado expresa una necesidad clara de reducir la carga de supervisión diaria, por lo
+que el 100% valora una solución que le ayude a tener más control sin necesidad de estar presente
+de forma permanente en el local.
+
+\begin{center}
+\includegraphics[width=18cm]{assets/img/grafi2.png}
+\end{center}
+
+Los gráficos reflejan que en tiendas y bodegas el control de productos perecibles sigue dependiendo de procesos 
+completamente manuales y de la supervisión presencial. Esto genera una carga operativa importante y eleva el riesgo 
+de pérdida de mercadería. Frente a ello, se identifica una clara disposición hacia una herramienta sencilla que ayude 
+a monitorear mejor el negocio y reducir la dependencia del control permanente.
+
+**Contrastación de Segmentos:**
+Al comparar ambos segmentos, se observa que los dos comparten una fuerte dependencia de procesos manuales o semimanuales
+para gestionar productos perecibles. Sin embargo, la naturaleza de sus necesidades es distinta. En el Segmento 1, el
+problema está asociado principalmente al control logístico, la trazabilidad y el monitoreo en tiempo real durante la 
+operación y el transporte. En el Segmento 2, en cambio, la dificultad se centra en la supervisión diaria dentro del
+local y en la necesidad de reducir la carga operativa de revisar manualmente el estado de los productos. 
+En ambos casos, FreshKargo representa una oportunidad de mejora, aunque con una propuesta de valor que debe
+adaptarse al contexto de cada usuario.
+
+\begin{center}
+\includegraphics[width=18cm]{assets/img/grafi3.png}
+\end{center}
+
+El gráfico comparativo evidencia que ambos segmentos necesitan mejorar el control de productos perecibles y valoran 
+soluciones simples de implementar. No obstante, el Segmento 1 prioriza funcionalidades ligadas al monitoreo logístico y
+la trazabilidad, mientras que el Segmento 2 destaca la necesidad de reducir la supervisión manual y facilitar la 
+gestión diaria del negocio.
+
+## Conclusiones y definición de arquetipos
+A partir del análisis realizado, se pueden identificar dos perfiles de usuario principales para FreshKargo:
+
+**User Persona Segmento 1 (“El operador logístico bajo presión”):**
+Es un usuario que necesita controlar mejor inventario, vencimientos, temperatura y 
+distribución, pero trabaja todavía con sistemas poco integrados. Busca una solución 
+que le permita reaccionar más rápido, reducir pérdidas y tener visibilidad en tiempo real.
+
+**User Persona Segmento 2 (“El supervisor de tienda saturado”):**
+Es un usuario que enfrenta una carga operativa alta por depender de revisiones 
+manuales y supervisión presencial constante. Busca una herramienta simple que le ayude
+a controlar mejor sus productos, reducir pérdidas y darle más tranquilidad en la gestión 
+diaria.
+
+
+
+## Análisis comparativo
+
+
+
+
+
+### Product Description
+
+FreshKargo es una plataforma web orientada a empresas que gestionan productos perecibles, la cual permite controlar inventarios, registrar entradas y salidas de productos, monitorear fechas de vencimiento y optimizar la distribución. Además, ofrece reportes en tiempo real y herramientas de trazabilidad que facilitan la toma de decisiones, reduciendo pérdidas y mejorando la eficiencia operativa.
 
 
 ## 2.3 Needfinding

@@ -1,67 +1,73 @@
-<div style="text-align: center; padding: 12px 20px;">
-
-# UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
-
-![](../assets/img/logo-upc.png){ width=2cm }
-
-**Facultad de Ingeniería**
-
-**Carrera de Ingeniería de Software**
-
 ---
-
-**Curso:** Desarrollo de Aplicaciones Open Source  
-**Código:** 1ASI0729 | **NRC:** 11848  
-**Ciclo:** 2026-10  
-**Docente:** Angel Augusto Velasquez Nuñez
-
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{fontspec}
+  - \setmainfont{Times New Roman}
 ---
+\vspace*{-1cm}
 
-![](../assets/img/logo-freshkargo.png){ width=4cm }
+\begin{center}
 
-# INFORME DE TRABAJO FINAL
+\makebox[\textwidth][c]{\huge \bfseries{UNIVERSIDAD PERUANA DE CIENCIAS}}\\[0.25cm]
+\makebox[\textwidth][c]{\huge \bfseries{APLICADAS}}
+\vspace{0.3cm}
 
-**Startup:** Fullstack United
+\includegraphics[width=3cm]{assets/img/logo-upc.png}
 
-**Producto:** FreshKargo
+\vspace{0.3cm}
 
----
+{\normalsize \textbf{Facultad de Ingeniería}\par}
+{\normalsize \textbf{Carrera de Ingeniería de Software}\par}
 
-## Integrantes del Equipo
+\vspace{0.5cm}
+\hrule
+\vspace{0.4cm}
 
-<div style="display: inline-block; text-align: center;">
-<table style="margin: 0 auto; text-align: center;">
-  <tr>
-    <th style="padding: 4px 12px;">Nombre</th>
-    <th style="padding: 4px 12px;">Código</th>
-  </tr>
-  <tr>
-    <td>Riveros Vera, Jennifer Yamilet</td>
-    <td>U20241C998</td>
-  </tr>
-  <tr>
-    <td>Saavedra Flores, Rodrigo Andree</td>
-    <td>U20241D811</td>
-  </tr>
-  <tr>
-    <td>Becerra Tito, Felix Orlando</td>
-    <td>U20211B387</td>
-  </tr>
-  <tr>
-    <td>Velasquez Velasquez, Rodrigo</td>
-    <td>U20222074</td>
-  </tr>
-  <tr>
-    <td>Carpio Peña, Josue Francisco</td>
-    <td>U20211B387</td>
-  </tr>
-</table>
-</div>
+\textbf{Curso:} Desarrollo de Aplicaciones Open Source \\
+\textbf{Código:} 1ASI0729 \,|\, \textbf{NRC:} 11848 \\
+\textbf{Ciclo:} 2026-10 \\
+\textbf{Docente:} Angel Augusto Velasquez Nuñez
 
----
+\vspace{0.4cm}
+\hrule
+\vspace{0.5cm}
 
-**Abril, 2026**
+\includegraphics[width=4cm]{assets/img/logo-freshkargo.png}
 
-</div>
+\vspace{0.4cm}
 
-<div style="page-break-after: always;"></div>
+\makebox[\textwidth][c]{{\huge \textbf{INFORME DE TRABAJO FINAL}}}
+
+\vspace{0.3cm}
+
+\textbf{Startup:} Fullstack United \\
+\textbf{Producto:} FreshKargo
+
+\vspace{0.3cm}
+\hrule
+\vspace{0.4cm}
+
+{\huge \textbf{Integrantes del Equipo}\par}
+
+\vspace{0.4cm}
+
+{\small
+\begin{tabular}{ll}
+\textbf{Nombre} & \textbf{Código} \\
+Riveros Vera, Jennifer Yamilet & U20241C998 \\
+Saavedra Flores, Rodrigo Andree & U20241D811 \\
+Becerra Tito, Felix Orlando & U20211B387 \\
+Velasquez Velasquez, Rodrigo & U20222074 \\
+Carpio Peña, Josue Francisco & U20211B387 \\
+\end{tabular}
+}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.35cm}
+
+{\normalsize \textbf{Abril, 2026}\par}
+
+\end{center}
+
+\newpage

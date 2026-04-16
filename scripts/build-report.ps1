@@ -23,7 +23,10 @@ $files = @(
 )
 
 pandoc @files `
-    --from markdown `
-    --resource-path=".;docs" `
-    --metadata-file pandoc/metadata.yaml `
-    -o "$outputDir/freshkargo-report.pdf"
+      --from markdown `
+      --resource-path=".;docs" `
+      --metadata-file pandoc/metadata.yaml `
+      --pdf-engine=xelatex `
+      -V mainfont="Times New Roman" `
+      -V geometry:margin=2.5cm `
+      -o "$outputDir/freshkargo-report.pdf"
