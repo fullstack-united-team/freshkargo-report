@@ -49,3 +49,77 @@
 | US-61 | Descarga de Prueba de Entrega (POD) | Como developer de un comerciante mayorista, quiero descargar el comprobante de entrega firmado vía API. | Escenario 1: Descarga exitosa de documento POD<br>Dado que el despacho tiene estado "Entregado"<br>Cuando el sistema envía un GET a `/api/v1/despachos/{id}/pod`<br>Entonces el API responde con código `200 OK` y el documento PDF de respaldo. | EP09 |
 | US-62 | Sincronización de catálogo perecible | Como developer de un comerciante minorista, quiero consumir el catálogo de productos disponibles vía API. | Escenario 1: Petición de catálogo actualizado<br>Dado que la distribuidora actualiza su inventario de perecibles<br>Cuando el sistema del minorista envía un GET a `/api/v1/productos`<br>Entonces el API responde con código `200 OK` y la lista de productos disponibles. | EP09 |
 | US-63 | Envío de reclamo vía API | Como developer de un comerciante mayorista, quiero enviar un ticket de reclamo por mercadería dañada a través del API. | Escenario 1: Registro remoto de incidencia<br>Dado que el mayorista detecta mercadería en mal estado<br>Cuando su ERP envía un POST a `/api/v1/despachos/{id}/reclamos` con la evidencia adjunta<br>Entonces el API crea el ticket en el sistema de la distribuidora y retorna código `201 Created`. | EP09 |
+
+## 3.1. Impact Mapping
+![Impact Map](../assets/img/Impactmap.png)
+## 3.2. Product Backlog 
+
+El Product Backlog de FreshKargo organiza y prioriza las historias de usuario identificadas para el desarrollo del producto. La priorización considera el valor de negocio, la dependencia funcional y la importancia de cada historia dentro del flujo principal del sistema. En primer lugar, se ubican las historias relacionadas con el acceso, la autenticación y la gestión de usuarios, ya que permiten el uso seguro de la plataforma. Luego, se priorizan las funcionalidades núcleo del negocio, como la gestión del inventario perecible, el control de reabastecimiento y la administración de despachos. Finalmente, se consideran las historias orientadas a trazabilidad, monitoreo de cadena de frío, captación comercial e integraciones técnicas.
+
+Los Story Points fueron estimados en una escala de **1, 2, 3, 5 y 8**, donde los valores más altos representan mayor complejidad técnica, esfuerzo de desarrollo o dependencia con otros componentes del sistema.
+
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+|:---:|:---:|---|---|:---:|
+| 1 | US-08 | Registro de negocio | Como empresa, quiere registrarse con sus datos, para acceder al sistema. | 3 |
+| 2 | US-09 | Validación de datos | Como sistema, quiere validar datos, para evitar errores. | 2 |
+| 3 | US-10 | Inicio de sesión | Como usuario, quiere iniciar sesión, para acceder a su cuenta. | 3 |
+| 4 | US-11 | Error de login | Como usuario, quiere recibir mensajes de error, para corregir datos. | 1 |
+| 5 | US-12 | Recuperación de contraseña | Como usuario, quiere recuperar contraseña, para volver a acceder. | 3 |
+| 6 | US-13 | Cierre de sesión | Como usuario, quiere cerrar sesión, para proteger su cuenta. | 1 |
+| 7 | US-14 | Persistencia de sesión | Como usuario, quiere mantener sesión activa, para evitar logins repetidos. | 3 |
+| 8 | US-15 | Creación de usuarios | Como administrador, quiere crear usuarios, para permitir acceso. | 3 |
+| 9 | US-16 | Asignación de roles | Como administrador, quiere asignar roles, para controlar permisos. | 2 |
+| 10 | US-17 | Edición de usuarios | Como administrador, quiere editar usuarios, para actualizar información. | 3 |
+| 11 | US-18 | Eliminación de usuarios | Como administrador, quiere eliminar usuarios, para mantener orden. | 2 |
+| 12 | US-19 | Restricción por roles | Como usuario, quiere acceso limitado, para evitar errores. | 3 |
+| 13 | US-20 | Lista de usuarios | Como administrador, quiere ver usuarios, para gestionarlos. | 2 |
+| 14 | US-21 | Cambio de roles | Como administrador, quiere modificar roles, para ajustar permisos. | 2 |
+| 15 | US-22 | Registro de productos perecibles | Como encargado de almacén de una empresa distribuidora de productos perecibles, quiere registrar productos con información básica, para mantener un catálogo organizado dentro de FreshKargo. | 3 |
+| 16 | US-23 | Edición de información de productos | Como administrador de un minimarket, quiere actualizar la información de sus productos perecibles, para mantener correctos sus datos. | 2 |
+| 17 | US-24 | Registro de lotes con fecha de vencimiento | Como encargado de almacén de una empresa distribuidora de productos perecibles, quiere registrar lotes con fecha de ingreso, fecha de vencimiento y cantidad disponible, para controlar la vida útil de la mercadería. | 5 |
+| 18 | US-25 | Consulta de stock disponible | Como dueño de un minimarket, quiere consultar el stock disponible por producto, para saber qué mercadería puede vender, reponer o retirar antes de que genere pérdidas. | 2 |
+| 19 | US-26 | Registro de entradas de inventario | Como encargado de almacén de una empresa distribuidora, quiere registrar la entrada de nuevos productos o lotes, para mantener actualizado el inventario digital frente al inventario físico. | 3 |
+| 20 | US-27 | Registro de salidas de inventario | Como administrador de un minimarket, quiere registrar salidas de productos por venta, devolución o merma, para mantener actualizado el stock real del negocio. | 3 |
+| 21 | US-28 | Identificación de productos próximos a vencer | Como empresa distribuidora de productos perecibles, quiere identificar productos próximos a vencer, para priorizar su salida, promoción o retiro antes de que se conviertan en merma. | 3 |
+| 22 | US-29 | Registro de proveedores | Como responsable de compras de una empresa distribuidora de productos perecibles, quiere registrar proveedores con sus datos de contacto y productos ofrecidos, para organizar las fuentes de abastecimiento del negocio. | 3 |
+| 23 | US-30 | Edición de datos de proveedores | Como administrador de un minimarket, quiere actualizar los datos de sus proveedores, para mantener vigente la información de contacto, condiciones de entrega y productos que ofrecen. | 2 |
+| 24 | US-31 | Asociación de productos con proveedores | Como responsable de compras de una empresa distribuidora, quiere asociar productos perecibles con sus proveedores, para identificar rápidamente a quién solicitar reabastecimiento cuando el stock sea bajo. | 3 |
+| 25 | US-32 | Visualización de productos con stock bajo | Como dueño de un minimarket, quiere visualizar productos con stock bajo, para planificar compras antes de quedarse sin mercadería disponible para la venta. | 2 |
+| 26 | US-33 | Generación de solicitud de reabastecimiento | Como responsable de compras de una empresa distribuidora, quiere generar solicitudes de reabastecimiento para productos con stock bajo, para iniciar el proceso de compra con el proveedor correspondiente. | 5 |
+| 27 | US-34 | Consulta de historial de reabastecimiento | Como administrador de negocio, quiere consultar el historial de solicitudes de reabastecimiento, para revisar compras anteriores y evaluar la frecuencia de reposición de productos. | 2 |
+| 28 | US-35 | Priorización de productos para reabastecimiento | Como comercio minorista, quiere priorizar los productos que deben reabastecerse según stock bajo y demanda reciente, para comprar primero la mercadería más necesaria. | 5 |
+| 29 | US-36 | Creación de orden de despacho | Como jefe de operaciones logísticas de una empresa distribuidora de productos perecibles, quiere crear órdenes de despacho asociando productos, lotes, cantidades y destino, para organizar la salida de mercadería desde el almacén. | 5 |
+| 30 | US-37 | Selección de lotes para despacho | Como encargado de almacén de una empresa distribuidora, quiere seleccionar los lotes que serán enviados en un despacho, para priorizar productos próximos a vencer y reducir pérdidas por caducidad. | 3 |
+| 31 | US-38 | Asignación de carga para distribución | Como responsable de despacho de una empresa distribuidora, quiere asignar productos y lotes a una carga de distribución, para preparar correctamente la mercadería antes de su salida del almacén. | 5 |
+| 32 | US-39 | Asignación de responsable de despacho | Como jefe de operaciones logísticas de una empresa distribuidora, quiere asignar un responsable a cada despacho, para tener trazabilidad interna sobre quién prepara y supervisa la salida de productos. | 2 |
+| 33 | US-40 | Confirmación de salida de carga | Como responsable de despacho de una empresa distribuidora, quiere confirmar la salida de una carga, para registrar oficialmente que los productos salieron del almacén hacia su destino. | 2 |
+| 34 | US-41 | Consulta de estado de preparación de despacho | Como jefe de operaciones logísticas de una empresa distribuidora, quiere consultar el estado de preparación de cada despacho, para saber si una carga está pendiente, completa o lista para salir. | 2 |
+| 35 | US-42 | Validación de productos antes del despacho | Como responsable de despacho de una empresa distribuidora, quiere validar los productos antes de su salida, para confirmar que las cantidades, lotes y condiciones coinciden con la orden de despacho. | 5 |
+| 36 | US-43 | Asignación de ruta hacia comercios | Como encargado de logística de una empresa distribuidora, quiere asignar una ruta y un vehículo a un despacho, para organizar la entrega diaria a los comerciantes. | 3 |
+| 37 | US-44 | Monitoreo de ruta de distribución | Como gerente de operaciones de una distribuidora, quiere visualizar en un mapa la ubicación del camión, para asegurar que la mercadería perecible llegue a tiempo. | 8 |
+| 38 | US-45 | Registro de llegada al comercio | Como transportista de una distribuidora, quiere registrar su llegada al local del comerciante, para documentar el cumplimiento de los tiempos logísticos. | 2 |
+| 39 | US-46 | Prueba de entrega de productos (POD) | Como comerciante minorista, quiere firmar digitalmente la recepción de la carga, para dejar constancia de que los productos llegaron en las condiciones acordadas. | 3 |
+| 40 | US-47 | Registro de rechazo de mercadería | Como comerciante mayorista, quiere poder registrar el rechazo de productos que llegaron dañados, para que la distribuidora gestione la nota de crédito. | 3 |
+| 41 | US-48 | Reasignación por rechazo total | Como encargado de logística de una distribuidora, quiere reasignar el retorno de un despacho rechazado totalmente, para devolverlo al almacén de mermas. | 5 |
+| 42 | US-49 | Historial de despachos recibidos | Como comerciante minorista, quiere visualizar un historial de todos los despachos recibidos, para conciliar sus facturas con la distribuidora. | 2 |
+| 43 | US-50 | Verificación de cadena de frío | Como comerciante mayorista, quiere ver las métricas de temperatura del camión antes de descargar, para asegurar la calidad de los productos. | 3 |
+| 44 | US-51 | Alerta de riesgo térmico en ruta | Como monitor de calidad de una distribuidora, quiere recibir una alerta si la temperatura excede los límites, para evitar mermas antes de llegar al minorista. | 5 |
+| 45 | US-52 | Notificación de proximidad al local | Como comerciante minorista, quiere recibir un aviso cuando el camión distribuidor esté cerca, para preparar su almacén frigorífico. | 3 |
+| 46 | US-53 | Alerta por pérdida de telemetría | Como empresa distribuidora, quiere saber si un sensor pierde señal, para evitar puntos ciegos en la cadena de frío. | 5 |
+| 47 | US-54 | Reporte diario de incidencias térmicas | Como gerente de operaciones de una distribuidora, quiere recibir un reporte automático diario con rupturas de frío, para evaluar el desempeño de la flota. | 3 |
+| 48 | US-55 | Alerta de mantenimiento frigorífico | Como coordinador de flota de una distribuidora, quiere recibir una alerta si un vehículo presenta variaciones térmicas constantes. | 5 |
+| 49 | US-56 | Notificación de merma al comerciante | Como comerciante mayorista, quiere recibir una notificación si su pedido sufrió una ruptura de frío confirmada en ruta. | 2 |
+| 50 | US-01 | Visualización de landing page | Como visitante que ingresa por primera vez, quiere visualizar una página clara y ordenada, para entender el propósito del sistema. | 2 |
+| 51 | US-02 | Navegación entre secciones | Como visitante, quiere navegar entre secciones de la landing, para conocer mejor la plataforma. | 2 |
+| 52 | US-03 | Visualización de beneficios | Como visitante, quiere visualizar beneficios del sistema, para entender su valor. | 1 |
+| 53 | US-04 | Visualización de funcionalidades | Como visitante, quiere ver funcionalidades del sistema, para entender cómo funciona. | 1 |
+| 54 | US-05 | Acceso a registro | Como visitante, quiere acceder a registro desde la landing, para crear una cuenta fácilmente. | 2 |
+| 55 | US-06 | Diseño responsive | Como usuario, quiere ver la landing en cualquier dispositivo, para navegar sin problemas. | 3 |
+| 56 | US-07 | Contacto | Como visitante, quiere contactar al equipo, para resolver dudas. | 2 |
+| 57 | US-57 | Autenticación de sistemas B2B | Como developer de una distribuidora, quiere enviar credenciales al API para obtener un token JWT, para integrar su ERP de forma segura. | 5 |
+| 58 | US-58 | Ingesta continua de telemetría | Como developer de una distribuidora, quiere ingestar datos de temperatura desde los camiones, para mantener el historial térmico actualizado. | 8 |
+| 59 | US-59 | Sincronización de trazabilidad | Como developer de un comerciante mayorista, quiere consultar el estado de un despacho vía API, para verlo directamente en su propio ERP. | 5 |
+| 60 | US-60 | Webhooks de alertas para comercios | Como developer, quiere configurar webhooks para que los sistemas de la distribuidora y mayorista reciban notificaciones automáticas ante fallas térmicas. | 8 |
+| 61 | US-61 | Descarga de Prueba de Entrega (POD) | Como developer de un comerciante mayorista, quiere descargar el comprobante de entrega firmado vía API. | 5 |
+| 62 | US-62 | Sincronización de catálogo perecible | Como developer de un comerciante minorista, quiere consumir el catálogo de productos disponibles vía API. | 5 |
+| 63 | US-63 | Envío de reclamo vía API | Como developer de un comerciante mayorista, quiere enviar un ticket de reclamo por mercadería dañada a través del API. | 5 |
