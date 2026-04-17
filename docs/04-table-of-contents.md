@@ -34,9 +34,12 @@
 - [2.4. Big Picture Event Storming](#big-picture-event-storming)
 - [2.5. Ubiquitous Language](#ubiquitous-language)
 
-[Capítulo III: Product Design](#capítulo-ii-requirements-elicitation-analysis)
 
-- [5.1. Style Guidelines](#competidores)
-    - [5.1.1. General Style Guidelines](#competidores.)
+
+[Capítulo IV: Product Design](#capítulo-iv-product-design)
+
+- [4.1. Style Guidelines](#style-guidelines)
+    - [4.1.1. General Style Guidelines](#general-style-guidelines)
+    - [4.1.2. Web Style Guide](#web-style-guide)
 
 <div style="page-break-after: always"></div>

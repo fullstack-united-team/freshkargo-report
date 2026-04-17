@@ -1,10 +1,15 @@
-### 5.1. Style Guidelines
-**5.1.1. General Style Guidelines**
+
+# Capítulo IV: Product Design
+
+## 4.1. Style Guidelines
+
+### 4.1.1. General Style Guidelines
+
 Las siguientes pautas de estilo han sido diseñadas para garantizar la coherencia visual y comunicativa de 
 FreshKargo, una plataforma orientada a la gestión de inventarios y distribución de productos perecibles. 
 Estas pautas buscan asegurar una experiencia intuitiva, clara y confiable para los usuarios, especialmente 
 en contextos donde el control en tiempo real, la trazabilidad y la reducción de pérdidas son factores clave.
-S
+
 ## Tipografía
 * **Fuente:** Arimo
 * **Tamaños:** Seleccionar entre los tamaños disponibles para asegurar una legibilidad adecuada en diferentes 
@@ -13,9 +18,7 @@ dispositivos y tamaños de pantalla.
 Espaciado entre letras y líneas: Ajustar según sea necesario para mejorar la legibilidad, especialmente en textos 
 largos.
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/letra.png}
-\end{center}
+![](../assets/img/letra.jpeg)
 
 ## Colores principales
 * **Dark Primary Color – #303F9F** → Utilizado en encabezados, elementos destacados y componentes con mayor 
@@ -35,9 +38,7 @@ La paleta de FreshKargo combina tonos azules y grises para transmitir confianza,
 profesionalismo. Los azules refuerzan la identidad digital del producto y su enfoque en el monitoreo y control 
 en tiempo real, mientras que los tonos neutros ayudan a mantener una interfaz limpia, equilibrada y fácil de usar.
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/paleta.png}
-\end{center}
+![](../assets/img/paleta.png)
 
 ## Espaciado
 * **Espaciado entre componentes:** Utilizar un sistema de espaciado basado en medidas regulares, como 8 px, 12 px, 16 px,
@@ -47,9 +48,7 @@ tablas y bloques de contenido.
 mantener una interfaz clara, organizada y fácil de usar, especialmente en procesos de monitoreo, control y 
 trazabilidad de productos perecibles.
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/espacio.png}
-\end{center}
+![](../assets/img/espacio.jpeg)
 
 ## Escritura
 * **Claridad comunicativa:** Implementar un estilo de redacción directo y comprensible que permita al usuario entender
@@ -74,9 +73,7 @@ orientada a la gestión de inventario, la trazabilidad y la conectividad de proc
 La identidad visual de FreshKargo busca proyectar una imagen moderna, clara y funcional, alineada con una solución
 digital enfocada en productos perecibles.
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/logo1.png}
-\end{center}
+![](../assets/img/logo1.jpeg)
 
 A partir de este concepto central, se desarrollaron distintas variaciones cromáticas del logotipo de FreshKargo
 que se adaptan a diferentes contextos de comunicación:
@@ -94,9 +91,7 @@ dentro de entornos digitales.
 geométrica esencial. Esta variación comunica sobriedad, consistencia y versatilidad, siendo útil para 
 aplicaciones más formales o materiales donde se requiere una presentación visual más limpia de la marca.
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/logo2.png}
-\end{center}
+![](../assets/img/logo2.jpeg)
 
 La identidad visual de FreshKargo es versátil y mantiene coherencia en sus diferentes usos. Su logotipo, de forma 
 geométrica y modular, transmite orden, control y conexión entre procesos. Gracias a sus variaciones cromáticas, 
@@ -111,16 +106,18 @@ Los valores que representa son:
 * Precisión
 * Confianza
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/logo3.png}
-\end{center}
+![](../assets/img/logo3.jpeg)
+
+### 4.1.2. Web Style Guide
+
+En esta sección se presentan las pautas visuales que definen la identidad de la interfaz web de FreshKargo. 
+Estas guías permiten mantener coherencia en el diseño, mejorar la usabilidad y asegurar una experiencia clara
+para los usuarios que gestionan productos perecibles.
 
 ## Iconography
-* Icon sets :
+* **Icon sets :**
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/ico.png}
-\end{center}
+![](../assets/img/ico.jpeg)
 
 ## Selectors
 El calendario es una función importante dentro de FreshKargo porque permite registrar, consultar y organizar 
@@ -134,22 +131,15 @@ revisar fechas de reposición y llevar un mejor control del estado de frutas y v
 dependencia del registro manual y facilita que el usuario pueda ordenar mejor sus tareas sin tener que revisar
 todo físicamente o estar presente todo el tiempo en el local.
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/calendario.png}
-\end{center}
+![](../assets/img/calendario.jpeg)
 
 ## Small Elements
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/noti.png}
-\end{center}
+![](../assets/img/noti.jpeg)
 
 ## Buttons
 
-\begin{center}
-\includegraphics[width=12cm]{assets/img/butt.png}
-\end{center}
-
+![](../assets/img/butt.png)
 
 
 
