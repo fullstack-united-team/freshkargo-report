@@ -78,7 +78,7 @@
 ![Impact Map](../assets/img/Impactmap.png)
 ## 3.2. Product Backlog 
 
-El Product Backlog de FreshKargo organiza y prioriza las historias de usuario identificadas para el desarrollo del producto. La priorización considera el valor de negocio, la dependencia funcional y la importancia de cada historia dentro del flujo principal del sistema. En primer lugar, se ubican las historias relacionadas con el acceso, la autenticación y la gestión de usuarios, ya que permiten el uso seguro de la plataforma. Luego, se priorizan las funcionalidades núcleo del negocio, como la gestión del inventario perecible, el control de reabastecimiento y la administración de despachos. Finalmente, se consideran las historias orientadas a trazabilidad, monitoreo de cadena de frío, captación comercial e integraciones técnicas.
+El Product Backlog de FreshKargo organiza y prioriza las historias de usuario identificadas para el desarrollo del producto. La priorización considera el valor de negocio y la importancia de cada historia dentro del flujo principal del sistema. En primer lugar, se ubican las historias relacionadas con el acceso, la autenticación y la gestión de usuarios, ya que permiten el uso seguro de la plataforma. Luego, se priorizan las funcionalidades núcleo del negocio, como la gestión del inventario perecible, el control de reabastecimiento y la administración de despachos. Finalmente, se consideran las historias orientadas a trazabilidad, monitoreo de cadena de frío, captación comercial e integraciones técnicas.
 
 Los Story Points fueron estimados en una escala de **1, 2, 3, 5 y 8**, donde los valores más altos representan mayor complejidad técnica, esfuerzo de desarrollo o dependencia con otros componentes del sistema.
 
