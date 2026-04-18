@@ -34,12 +34,17 @@
 - [2.4. Big Picture Event Storming](#big-picture-event-storming)
 - [2.5. Ubiquitous Language](#ubiquitous-language)
 
+[Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
 
+- [3.1. User Stories](#user-stories)
+- [3.2. Impact Mapping](#impact-mapping)
+- [3.3. Product Backlog](#product-backlog)
 
 [Capítulo IV: Product Design](#capítulo-iv-product-design)
 
 - [4.1. Style Guidelines](#style-guidelines)
     - [4.1.1. General Style Guidelines](#general-style-guidelines)
     - [4.1.2. Web Style Guide](#web-style-guide)
+
 
 <div style="page-break-after: always"></div>

@@ -60,8 +60,12 @@ Software empresarial bajo licencia o suscripción.
 - No es una solución integral como un ERP  
 - Requiere integración con otros sistemas  
 
-
-
+## 2.1.1. Análisis competitivo.
+![Análisis competitivo 1](../assets/img/analisiscompetitivo.png)
+![Análisis competitivo 1.2](../assets/img/analisiscompetitivo1.2.png)
+![Análisis competitivo 1.3](../assets/img/analisiscompetitivo1.3.png)
+![Análisis competitivo 1.4](../assets/img/analisiscompetitivo1.4.png)
+[Ver documento ](https://docs.google.com/document/d/1gADmvTK0BoCpc0tqkY7eAAwzjFtGKt-_wCF9Gn6ibZ0/edit?usp=sharing)
 ### Conclusión
 
 Los competidores analizados presentan soluciones robustas orientadas a la gestión de inventarios, destacando principalmente en la automatización, análisis de datos y optimización de la cadena de suministro. Sin embargo, la mayoría de estas herramientas están orientadas a medianas y grandes empresas, lo que abre una oportunidad para desarrollar una solución más accesible, simple y enfocada en pequeñas empresas o distribuidoras locales de productos perecibles.

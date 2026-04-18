@@ -1,331 +1,163 @@
-## 3.1. User Stories {#user-stories}
 
+# Capítulo III: Requirements Specification
 
-\scriptsize
-\renewcommand{\arraystretch}{1.25}
+## 3.1. User Stories
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+|----------------|--------|------------|--------------------------|---------------------------|
+| EP01 | Landing page y captación de usuarios | Como visitante interesado en soluciones tecnológicas para la gestión de productos perecibles, quiere acceder a una landing page clara y estructurada, para comprender los beneficios del sistema y decidir registrarse. | Dado que el usuario accede al sitio web, cuando la página se carga correctamente, entonces el sistema muestra información clara del producto. | - |
+| US-01 | Visualización de landing page | Como visitante que ingresa por primera vez, quiere visualizar una página clara y ordenada, para entender el propósito del sistema. | Escenario 1: Dado que el usuario accede a la URL principal, cuando el sistema responde correctamente, entonces se muestra la landing con contenido visible. <br> Escenario 2: Dado que ocurre un problema de conexión, cuando la página no carga correctamente, entonces el sistema muestra un mensaje de error. | EP01 |
+| US-02 | Navegación entre secciones | Como visitante, quiere navegar entre secciones de la landing, para conocer mejor la plataforma. | Escenario 1: Dado que el usuario está en la landing, cuando selecciona una sección, entonces el sistema muestra el contenido correspondiente. <br> Escenario 2: Dado que el usuario intenta acceder a una sección inexistente, cuando realiza la acción, entonces el sistema muestra un mensaje informativo. | EP01 |
+| US-03 | Visualización de beneficios | Como visitante, quiere visualizar beneficios del sistema, para entender su valor. | Escenario 1: Dado que el usuario accede a la sección de beneficios, cuando revisa el contenido, entonces el sistema muestra ventajas claras. <br> Escenario 2: Dado que no hay contenido disponible, cuando el usuario accede, entonces el sistema muestra un mensaje informativo. | EP01 |
+| US-04 | Visualización de funcionalidades | Como visitante, quiere ver funcionalidades del sistema, para entender cómo funciona. | Escenario 1: Dado que el usuario accede a funcionalidades, cuando revisa la sección, entonces el sistema muestra características principales. <br> Escenario 2: Dado que ocurre un error de carga, cuando accede a la sección, entonces el sistema muestra un mensaje de error. | EP01 |
+| US-05 | Acceso a registro | Como visitante, quiere acceder a registro desde la landing, para crear una cuenta fácilmente. | Escenario 1: Dado que el usuario está en la landing, cuando hace clic en registrarse, entonces el sistema redirige al formulario. <br> Escenario 2: Dado que ocurre un error en la redirección, cuando el usuario hace clic, entonces el sistema muestra un mensaje de error. | EP01 |
+| US-06 | Diseño responsive | Como usuario, quiere ver la landing en cualquier dispositivo, para navegar sin problemas. | Escenario 1: Dado que el usuario accede desde móvil, cuando carga la página, entonces el sistema adapta el diseño. <br> Escenario 2: Dado que el dispositivo no es compatible, cuando accede, entonces el sistema muestra una versión optimizada. | EP01 |
+| US-07 | Contacto | Como visitante, quiere contactar al equipo, para resolver dudas. | Escenario 1: Dado que el usuario completa el formulario, cuando envía el mensaje, entonces el sistema registra la consulta. <br> Escenario 2: Dado que el formulario está incompleto, cuando intenta enviarlo, entonces el sistema muestra errores de validación. | EP01 |
+| EP02 | Registro y acceso de negocios | Como empresa, quiere registrarse e iniciar sesión, para acceder a las funcionalidades del sistema. | Dado que el usuario desea acceder al sistema, cuando completa el registro, entonces el sistema crea la cuenta. | - |
+| US-08 | Registro de negocio | Como empresa, quiere registrarse con sus datos, para acceder al sistema. | Escenario 1: Dado que el usuario completa el formulario, cuando envía datos válidos, entonces el sistema crea la cuenta. <br> Escenario 2: Dado que el usuario ingresa datos inválidos, cuando intenta registrarse, entonces el sistema muestra errores. | EP02 |
+| US-09 | Validación de datos | Como sistema, quiere validar datos, para evitar errores. | Escenario 1: Dado que el usuario ingresa datos incorrectos, cuando intenta registrarse, entonces el sistema bloquea el registro. | EP02 |
+| US-10 | Inicio de sesión | Como usuario, quiere iniciar sesión, para acceder a su cuenta. | Escenario 1: Dado que el usuario ingresa credenciales válidas, cuando inicia sesión, entonces el sistema permite el acceso. <br> Escenario 2: Dado que las credenciales son incorrectas, cuando intenta ingresar, entonces el sistema muestra error. | EP02 |
+| US-11 | Error de login | Como usuario, quiere recibir mensajes de error, para corregir datos. | Escenario 1: Dado que el usuario ingresa datos incorrectos, cuando intenta iniciar sesión, entonces el sistema muestra mensaje claro. | EP02 |
+| US-12 | Recuperación de contraseña | Como usuario, quiere recuperar contraseña, para volver a acceder. | Escenario 1: Dado que el usuario solicita recuperación, cuando ingresa correo válido, entonces el sistema envía enlace. <br> Escenario 2: Dado que el correo no existe, cuando solicita recuperación, entonces el sistema muestra error. | EP02 |
+| US-13 | Cierre de sesión | Como usuario, quiere cerrar sesión, para proteger su cuenta. | Escenario 1: Dado que el usuario está autenticado, cuando cierra sesión, entonces el sistema finaliza la sesión. | EP02 |
+| US-14 | Persistencia de sesión | Como usuario, quiere mantener sesión activa, para evitar logins repetidos. | Escenario 1: Dado que el usuario ya inició sesión, cuando regresa, entonces el sistema mantiene sesión activa. <br> Escenario 2: Dado que la sesión expira, cuando intenta acceder, entonces el sistema solicita login nuevamente. | EP02 |
+| EP03 | Gestión de usuarios y roles | Como administrador, quiere gestionar usuarios y roles, para controlar accesos en el sistema. | Dado que el administrador accede al sistema, cuando gestiona usuarios, entonces el sistema aplica cambios correctamente. | - |
+| US-15 | Creación de usuarios | Como administrador, quiere crear usuarios, para permitir acceso. | Escenario 1: Dado que el admin ingresa datos válidos, cuando crea usuario, entonces el sistema lo registra. <br> Escenario 2: Dado que los datos son inválidos, cuando intenta crear usuario, entonces el sistema muestra error. | EP03 |
+| US-16 | Asignación de roles | Como administrador, quiere asignar roles, para controlar permisos. | Escenario 1: Dado que el usuario existe, cuando se asigna un rol, entonces el sistema guarda el rol. <br> Escenario 2: Dado que el rol no existe, cuando se intenta asignar, entonces el sistema muestra error. | EP03 |
+| US-17 | Edición de usuarios | Como administrador, quiere editar usuarios, para actualizar información. | Escenario 1: Dado que el usuario existe, cuando modifica datos válidos, entonces el sistema actualiza información. <br> Escenario 2: Dado que los datos son inválidos, cuando intenta guardar, entonces el sistema muestra error. | EP03 |
+| US-18 | Eliminación de usuarios | Como administrador, quiere eliminar usuarios, para mantener orden. | Escenario 1: Dado que el usuario existe, cuando se elimina, entonces el sistema borra el registro. <br> Escenario 2: Dado que el usuario no existe, cuando intenta eliminarlo, entonces el sistema muestra error. | EP03 |
+| US-19 | Restricción por roles | Como usuario, quiere acceso limitado, para evitar errores. | Escenario 1: Dado que el usuario tiene rol, cuando accede a función permitida, entonces el sistema permite acceso. <br> Escenario 2: Dado que intenta acceder a función restringida, cuando lo hace, entonces el sistema bloquea acceso. | EP03 |
+| US-20 | Lista de usuarios | Como administrador, quiere ver usuarios, para gestionarlos. | Escenario 1: Dado que existen usuarios, cuando accede al módulo, entonces el sistema muestra la lista. <br> Escenario 2: Dado que no hay usuarios, cuando accede, entonces el sistema muestra mensaje informativo. | EP03 |
+| US-21 | Cambio de roles | Como administrador, quiere modificar roles, para ajustar permisos. | Escenario 1: Dado que el usuario tiene rol, cuando se cambia, entonces el sistema actualiza el rol. <br> Escenario 2: Dado que ocurre un error, cuando intenta cambiar rol, entonces el sistema muestra mensaje de error. | EP03 |
+| EP04 | Gestión de productos e inventario perecibles | Como empresa distribuidora o comercio minorista, quiero gestionar productos perecibles, lotes, fechas de vencimiento y stock disponible, para reducir pérdidas y mantener control del inventario. | N/A | N/A |
+| US-22 | Registro de productos perecibles | Como encargado de inventario, quiero registrar productos perecibles con sus datos principales, para mantener actualizado el catálogo de productos del negocio. | Escenario 1: Registro exitoso de producto<br>*Dado que* el encargado ingresa los datos válidos del producto<br>*Cuando* confirma el registro<br>*Entonces* el sistema guarda el producto en el inventario. | EP04 |
+| US-23 | Edición de información de productos | Como encargado de inventario, quiero editar la información de un producto perecible, para corregir o actualizar sus datos cuando sea necesario. | Escenario 1: Actualización exitosa de producto<br>*Dado que* el producto existe en el inventario<br>*Cuando* el encargado modifica sus datos y guarda los cambios<br>*Entonces* el sistema actualiza la información del producto. | EP04 |
+| US-24 | Eliminación o desactivación de productos | Como encargado de inventario, quiero eliminar o desactivar productos que ya no se comercializan, para mantener el catálogo ordenado y vigente. | Escenario 1: Desactivación de producto<br>*Dado que* el producto existe en el sistema<br>*Cuando* el encargado confirma su desactivación<br>*Entonces* el sistema retira el producto del catálogo activo. | EP04 |
+| US-25 | Registro de lotes de productos | Como encargado de almacén, quiero registrar lotes de productos perecibles, para controlar su ingreso, vencimiento y trazabilidad. | Escenario 1: Registro exitoso de lote<br>*Dado que* el producto existe en el inventario<br>*Cuando* el encargado registra un lote con fecha de ingreso y vencimiento<br>*Entonces* el sistema asocia el lote al producto correspondiente. | EP04 |
+| US-26 | Visualización de stock disponible | Como encargado de inventario, quiero visualizar el stock disponible de cada producto, para tomar decisiones sobre ventas, despacho o reabastecimiento. | Escenario 1: Consulta de stock<br>*Dado que* existen productos registrados<br>*Cuando* el encargado accede al inventario<br>*Entonces* el sistema muestra la cantidad disponible por producto y lote. | EP04 |
+| US-27 | Alerta por vencimiento próximo | Como encargado de inventario, quiero recibir alertas de productos próximos a vencer, para priorizar su venta o despacho antes de generar pérdidas. | Escenario 1: Detección de vencimiento próximo<br>*Dado que* un lote se encuentra cerca de su fecha de vencimiento<br>*Cuando* el sistema verifica el inventario<br>*Entonces* genera una alerta para informar el riesgo de vencimiento. | EP04 |
+| US-28 | Control de merma de productos | Como encargado de almacén, quiero registrar productos vencidos o dañados como merma, para mantener el inventario real actualizado. | Escenario 1: Registro de merma<br>*Dado que* un producto no se encuentra apto para su venta o despacho<br>*Cuando* el encargado registra la merma<br>*Entonces* el sistema descuenta la cantidad afectada del inventario disponible. | EP04 |
+| EP05 | Control de reabastecimiento y proveedores | Como empresa distribuidora o comercio minorista, quiero controlar proveedores y necesidades de reabastecimiento, para asegurar disponibilidad de productos perecibles y evitar quiebres de stock. | N/A | N/A |
+| US-29 | Registro de proveedores | Como encargado de compras, quiero registrar proveedores de productos perecibles, para mantener una base de datos organizada de abastecimiento. | Escenario 1: Registro exitoso de proveedor<br>*Dado que* el encargado ingresa datos válidos del proveedor<br>*Cuando* confirma el registro<br>*Entonces* el sistema guarda al proveedor en la base de datos. | EP05 |
+| US-30 | Edición de datos de proveedores | Como encargado de compras, quiero editar los datos de un proveedor, para mantener actualizada su información de contacto y abastecimiento. | Escenario 1: Actualización exitosa de proveedor<br>*Dado que* el proveedor existe en el sistema<br>*Cuando* el encargado modifica sus datos<br>*Entonces* el sistema actualiza la información del proveedor. | EP05 |
+| US-31 | Asociación de productos con proveedores | Como encargado de compras, quiero asociar productos perecibles a sus proveedores, para identificar quién abastece cada producto del inventario. | Escenario 1: Asociación exitosa<br>*Dado que* existen productos y proveedores registrados<br>*Cuando* el encargado vincula un producto con un proveedor<br>*Entonces* el sistema guarda la relación de abastecimiento. | EP05 |
+| US-32 | Definición de stock mínimo | Como encargado de inventario, quiero definir un stock mínimo para cada producto, para detectar cuándo se necesita reabastecimiento. | Escenario 1: Configuración de stock mínimo<br>*Dado que* el producto existe en el inventario<br>*Cuando* el encargado define una cantidad mínima<br>*Entonces* el sistema guarda el umbral de reabastecimiento. | EP05 |
+| US-33 | Alerta por bajo stock | Como encargado de compras, quiero recibir alertas cuando un producto llegue a stock mínimo, para solicitar reposición oportunamente. | Escenario 1: Detección de bajo stock<br>*Dado que* un producto alcanza o baja su stock mínimo<br>*Cuando* el sistema verifica el inventario<br>*Entonces* genera una alerta de reabastecimiento. | EP05 |
+| US-34 | Generación de solicitud de reabastecimiento | Como encargado de compras, quiero generar solicitudes de reabastecimiento, para pedir productos a los proveedores correspondientes. | Escenario 1: Solicitud generada correctamente<br>*Dado que* existe una alerta de bajo stock<br>*Cuando* el encargado genera la solicitud<br>*Entonces* el sistema registra la solicitud de reabastecimiento. | EP05 |
+| US-35 | Seguimiento de solicitudes a proveedores | Como encargado de compras, quiero consultar el estado de las solicitudes enviadas a proveedores, para saber si están pendientes, aprobadas o atendidas. | Escenario 1: Consulta de estado de solicitud<br>*Dado que* existen solicitudes de reabastecimiento registradas<br>*Cuando* el encargado revisa el módulo de solicitudes<br>*Entonces* el sistema muestra el estado actualizado de cada solicitud. | EP05 |
+| EP06 | Gestión de carga y despacho | Como empresa distribuidora, quiero gestionar la preparación de carga y despacho de productos perecibles, para asegurar entregas organizadas, trazables y en condiciones adecuadas. | N/A | N/A |
+| US-36 | Creación de órdenes de despacho | Como encargado de logística, quiero crear órdenes de despacho, para organizar la salida de productos perecibles hacia los comercios. | Escenario 1: Creación exitosa de despacho<br>*Dado que* existen productos disponibles en inventario<br>*Cuando* el encargado genera una orden de despacho<br>*Entonces* el sistema registra la orden con los productos seleccionados. | EP06 |
+| US-37 | Selección de productos por lote para despacho | Como encargado de almacén, quiero seleccionar productos por lote para un despacho, para priorizar la salida de productos según vencimiento y disponibilidad. | Escenario 1: Selección de lote disponible<br>*Dado que* existen lotes disponibles de un producto<br>*Cuando* el encargado selecciona el lote para despacho<br>*Entonces* el sistema lo vincula a la orden correspondiente. | EP06 |
+| US-38 | Validación de stock antes del despacho | Como sistema, quiero validar el stock disponible antes de confirmar un despacho, para evitar preparar pedidos con cantidades insuficientes. | Escenario 1: Validación correcta de stock<br>*Dado que* el encargado intenta confirmar una orden de despacho<br>*Cuando* el sistema verifica las cantidades solicitadas<br>*Entonces* permite confirmar la orden si el stock es suficiente. | EP06 |
+| US-39 | Asignación de vehículo para despacho | Como encargado de logística, quiero asignar un vehículo a una orden de despacho, para organizar el transporte de la carga perecible. | Escenario 1: Asignación exitosa de vehículo<br>*Dado que* existe una orden de despacho pendiente<br>*Cuando* el encargado selecciona un vehículo disponible<br>*Entonces* el sistema vincula el vehículo con la orden de despacho. | EP06 |
+| US-40 | Asignación de transportista | Como encargado de logística, quiero asignar un transportista a una orden de despacho, para definir al responsable de la entrega. | Escenario 1: Asignación exitosa de transportista<br>*Dado que* existe una orden de despacho programada<br>*Cuando* el encargado selecciona un transportista disponible<br>*Entonces* el sistema asigna al transportista como responsable del despacho. | EP06 |
+| US-41 | Confirmación de salida de carga | Como encargado de almacén, quiero confirmar la salida de la carga, para registrar oficialmente que los productos salieron del almacén. | Escenario 1: Confirmación de salida<br>*Dado que* la orden de despacho está preparada<br>*Cuando* el encargado confirma la salida<br>*Entonces* el sistema cambia el estado del despacho a “En tránsito”. | EP06 |
+| US-42 | Consulta de despachos programados | Como encargado de logística, quiero visualizar los despachos programados, para monitorear qué cargas están pendientes, preparadas o en tránsito. | Escenario 1: Visualización de despachos<br>*Dado que* existen órdenes de despacho registradas<br>*Cuando* el encargado accede al módulo de despachos<br>*Entonces* el sistema muestra la lista de despachos con su estado correspondiente. | EP06 |
+| EP07 | Distribución y trazabilidad de despachos | Como empresa distribuidora, quiero gestionar el seguimiento del cargamento hasta el local del comerciante, para asegurar la visibilidad de la ruta y confirmar la entrega. | N/A | N/A |
+| US-43 | Asignación de ruta hacia comercios | Como encargado de logística de una empresa distribuidora, quiero asignar una ruta y un vehículo a un despacho, para organizar la entrega diaria a los comerciantes. | Escenario 1: Asignación exitosa<br>Dado que existe un despacho programado<br>Cuando el encargado selecciona un vehículo disponible y confirma la ruta<br>Entonces el sistema vincula el camión al despacho y notifica al transportista. | EP07 |
+| US-44 | Monitoreo de ruta de distribución | Como gerente de operaciones de una distribuidora, quiero visualizar en un mapa la ubicación del camión, para asegurar que la mercadería perecible llegue a tiempo. | Escenario 1: Actualización de ubicación en tránsito<br>Dado que el vehículo distribuidor está en movimiento<br>Cuando el GPS emite una nueva coordenada<br>Entonces el sistema actualiza la posición del marcador en el mapa. | EP07 |
+| US-45 | Registro de llegada al comercio | Como transportista de una distribuidora, quiero registrar mi llegada al local del comerciante, para documentar el cumplimiento de los tiempos logísticos. | Escenario 1: Registro de llegada al destino<br>Dado que el transportista llega al almacén del comerciante<br>Cuando selecciona la opción "En punto de entrega"<br>Entonces el sistema registra la hora exacta y notifica al receptor. | EP07 |
+| US-46 | Prueba de entrega de productos (POD) | Como comerciante minorista, quiero firmar digitalmente la recepción de la carga, para dejar constancia de que los productos llegaron en las condiciones acordadas. | Escenario 1: Registro de conformidad<br>Dado que la carga ha sido descargada<br>Cuando el comerciante firma en la aplicación del transportista<br>Entonces el sistema guarda la firma y cambia el estado a "Entregado". | EP07 |
+| US-47 | Registro de rechazo de mercadería | Como comerciante mayorista, quiero poder registrar el rechazo de productos que llegaron dañados, para que la distribuidora gestione la nota de crédito. | Escenario 1: Rechazo parcial de la carga<br>Dado que el comerciante inspecciona los productos<br>Cuando marca un lote como "Dañado/Rechazado" en el sistema<br>Entonces el despacho se actualiza con una incidencia y notifica a la distribuidora. | EP07 |
+| US-48 | Reasignación por rechazo total | Como encargado de logística de una distribuidora, quiero reasignar el retorno de un despacho rechazado totalmente, para devolverlo al almacén de mermas. | Escenario 1: Retorno a base<br>Dado que un comerciante rechaza la totalidad del despacho<br>Cuando el transportista confirma el rechazo en la aplicación<br>Entonces el sistema genera una ruta de retorno automático al almacén principal. | EP07 |
+| US-49 | Historial de despachos recibidos | Como comerciante minorista, quiero visualizar un historial de todos los despachos recibidos, para conciliar mis facturas con la distribuidora. | Escenario 1: Consulta de entregas mensuales<br>Dado que el comerciante ha recibido múltiples pedidos<br>Cuando ingresa a la sección de "Historial de Recepciones"<br>Entonces el sistema muestra una lista con fechas, productos y estado de cada entrega. | EP07 |
+| EP08 | Alertas, notificaciones y monitoreo de condiciones | Como actor de la cadena de suministro, quiero vigilar la cadena de frío, para recibir avisos inmediatos ante anomalías que pongan en riesgo los productos perecibles. | N/A | N/A |
+| US-50 | Verificación de cadena de frío | Como comerciante mayorista, quiero ver las métricas de temperatura del camión antes de descargar, para asegurar la calidad de los productos. | Escenario 1: Lectura de condiciones de llegada<br>Dado que el camión de la distribuidora llega al local<br>Cuando el comerciante revisa el enlace de seguimiento<br>Entonces el sistema muestra los indicadores térmicos en rango óptimo. | EP08 |
+| US-51 | Alerta de riesgo térmico en ruta | Como monitor de calidad de una distribuidora, quiero recibir una alerta si la temperatura excede los límites, para evitar mermas antes de llegar al minorista. | Escenario 1: Detección de temperatura fuera de rango<br>Dado que la carga perecible está en tránsito<br>Cuando el sistema recibe 3 lecturas superiores al límite máximo<br>Entonces genera una alerta crítica y envía un SMS al transportista. | EP08 |
+| US-52 | Notificación de proximidad al local | Como comerciante minorista, quiero recibir un aviso cuando el camión distribuidor esté cerca, para preparar mi almacén frigorífico. | Escenario 1: Aviso por cercanía al comercio<br>Dado que el camión está en tránsito<br>Cuando el GPS detecta que está a menos de 5 kilómetros del comercio<br>Entonces el sistema envía una alerta de próxima llegada. | EP08 |
+| US-53 | Alerta por pérdida de telemetría | Como empresa distribuidora, quiero saber si un sensor pierde señal, para evitar puntos ciegos en la cadena de frío. | Escenario 1: Desconexión prolongada<br>Dado que un despacho de distribución está activo<br>Cuando no se recibe telemetría durante más de 15 minutos<br>Entonces el sistema activa una alerta de "Pérdida de Conexión". | EP08 |
+| US-54 | Reporte diario de incidencias térmicas | Como gerente de operaciones de una distribuidora, quiero recibir un reporte automático diario con rupturas de frío, para evaluar el desempeño de la flota. | Escenario 1: Generación de reporte de fin de jornada<br>Dado que finaliza la ruta de distribución<br>Cuando el sistema consolida las alertas del día<br>Entonces envía un reporte en PDF al correo del gerente de operaciones. | EP08 |
+| US-55 | Alerta de mantenimiento frigorífico | Como coordinador de flota de una distribuidora, quiero recibir una alerta si un vehículo presenta variaciones térmicas constantes. | Escenario 1: Patrón de falla detectado<br>Dado que un camión ha completado sus rutas de la semana<br>Cuando el sistema detecta fluctuaciones térmicas en más del 30% de sus viajes<br>Entonces genera una alerta de mantenimiento sugerido. | EP08 |
+| US-56 | Notificación de merma al comerciante | Como comerciante mayorista, quiero recibir una notificación si mi pedido sufrió una ruptura de frío confirmada en ruta. | Escenario 1: Aviso preventivo de daño<br>Dado que el monitor de la distribuidora confirma una falla irreparable de frío<br>Cuando el sistema marca el despacho como "Merma en ruta"<br>Entonces se envía un correo al mayorista avisando la cancelación y reprogramación del pedido. | EP08 |
+| EP09 | Technical stories del RESTful API e integraciones | Como developer, quiero disponer de endpoints para conectar los sistemas de las distribuidoras y los ERP de los comerciantes. | N/A | N/A |
+| US-57 | Autenticación de sistemas B2B | Como developer de una distribuidora, quiero enviar credenciales al API para obtener un token JWT, para integrar nuestro ERP de forma segura. | Escenario 1: Generación de Token B2B<br>Dado que el sistema externo envía un POST a /api/v1/auth<br>Cuando el servidor valida los accesos corporativos<br>Entonces el API responde con código 200 OK y el token JWT. | EP09 |
+| US-58 | Ingesta continua de telemetría | Como developer de una distribuidora, quiero ingestar datos de temperatura desde los camiones, para mantener el historial térmico actualizado. | Escenario 1: Registro masivo de condiciones<br>Dado que el dispositivo IoT recopila datos térmicos<br>Cuando envía un POST a /api/v1/telemetry con el payload JSON<br>Entonces el API valida la estructura y responde con 201 Created. | EP09 |
+| US-59 | Sincronización de trazabilidad | Como developer de un comerciante mayorista, quiero consultar el estado de un despacho vía API, para verlo directamente en nuestro propio ERP. | Escenario 1: Petición de trazabilidad externa<br>Dado que el ERP del comerciante envía un GET a /api/v1/despachos/{id}/trazabilidad<br>Cuando el ID de despacho es válido<br>Entonces el API responde con código 200 OK y el historial de progreso. | EP09 |
+| US-60 | Webhooks de alertas para comercios | Como developer, quiero configurar webhooks para que los sistemas de la distribuidora y mayorista reciban notificaciones automáticas ante fallas térmicas. | Escenario 1: Disparo de webhook por alerta térmica<br>Dado que se registra una alerta crítica de temperatura<br>Cuando existe una URL del comerciante suscrita<br>Entonces el API dispara un POST hacia su sistema con los detalles. | EP09 |
+| US-61 | Descarga de Prueba de Entrega (POD) | Como developer de un comerciante mayorista, quiero descargar el comprobante de entrega firmado vía API. | Escenario 1: Descarga exitosa de documento POD<br>Dado que el despacho tiene estado "Entregado"<br>Cuando el sistema envía un GET a /api/v1/despachos/{id}/pod<br>Entonces el API responde con código 200 OK y el documento PDF de respaldo. | EP09 |
+| US-62 | Sincronización de catálogo perecible | Como developer de un comerciante minorista, quiero consumir el catálogo de productos disponibles vía API. | Escenario 1: Petición de catálogo actualizado<br>Dado que la distribuidora actualiza su inventario de perecibles<br>Cuando el sistema del minorista envía un GET a /api/v1/productos<br>Entonces el API responde con código 200 OK y la lista de productos disponibles. | EP09 |
+| US-63 | Envío de reclamo vía API | Como developer de un comerciante mayorista, quiero enviar un ticket de reclamo por mercadería dañada a través del API. | Escenario 1: Registro remoto de incidencia<br>Dado que el mayorista detecta mercadería en mal estado<br>Cuando su ERP envía un POST a /api/v1/despachos/{id}/reclamos con la evidencia adjunta<br>Entonces el API crea el ticket en el sistema de la distribuidora y retorna código 201 Created. | EP09 |
 
-\begin{longtable}{|p{0.09\textwidth}|p{0.18\textwidth}|p{0.30\textwidth}|p{0.35\textwidth}|}
-\hline
-\textbf{Story ID} & \textbf{Título} & \textbf{Descripción} & \textbf{Criterios de Aceptación (Gherkin)} \\
-\hline
-\endfirsthead
+## 3.2. Impact Mapping
 
-\hline
-\textbf{Story ID} & \textbf{Título} & \textbf{Descripción} & \textbf{Criterios de Aceptación (Gherkin)} \\
-\hline
-\endhead
+![Impact Map](../assets/img/Impactmap.png)
 
-\textbf{EP04} &
-\textbf{Gestión de productos e inventario perecible} &
-Como empresa distribuidora de productos perecibles o comercio minorista, quiero gestionar productos, lotes, stock y vencimientos, para reducir pérdidas por caducidad, deterioro o mala gestión del inventario. &
-\\
-\hline
+## 3.3. Product Backlog 
 
-US-19 &
-Registro de productos perecibles &
-Como encargado de almacén de una empresa distribuidora de productos perecibles, quiero registrar productos con información básica como nombre, categoría, unidad de medida y condiciones de almacenamiento, para mantener un catálogo organizado dentro de FreshKargo. &
-\textbf{Escenario 1: Registro exitoso de producto}\newline
-\textbf{Dado que} el encargado de almacén está autenticado en la plataforma\newline
-\textbf{Cuando} ingresa los datos obligatorios del producto y confirma el registro\newline
-\textbf{Entonces} el sistema guarda el producto perecible en el catálogo de inventario.\newline\newline
-\textbf{Escenario 2: Registro con datos incompletos}\newline
-\textbf{Dado que} el encargado intenta registrar un producto perecible\newline
-\textbf{Cuando} deja campos obligatorios vacíos o ingresa datos inválidos\newline
-\textbf{Entonces} el sistema muestra mensajes de validación y no guarda el producto.
-\\
-\hline
+El Product Backlog de FreshKargo organiza y prioriza las historias de usuario identificadas para el desarrollo del sistema. En esta sección se presenta un cuadro consolidado que sigue el orden secuencial de las User Stories, desde la US-01 hasta la US-63. Los Story Points fueron asignados en una escala relativa de *1, 2, 3, 5 y 8*, donde los valores más altos representan mayor complejidad técnica, esfuerzo de implementación o dependencia de otros componentes del sistema.
 
-US-20 &
-Edición de información de productos &
-Como administrador de un minimarket, quiero actualizar la información de mis productos perecibles, para mantener correctos los datos de categoría, presentación, unidad de medida y condiciones de conservación. &
-\textbf{Escenario 1: Actualización exitosa}\newline
-\textbf{Dado que} existe un producto registrado en el sistema\newline
-\textbf{Cuando} el administrador modifica datos válidos y guarda los cambios\newline
-\textbf{Entonces} el sistema actualiza la información del producto.\newline\newline
-\textbf{Escenario 2: Datos inválidos al editar}\newline
-\textbf{Dado que} el administrador edita un producto existente\newline
-\textbf{Cuando} ingresa información inválida o incompleta\newline
-\textbf{Entonces} el sistema muestra mensajes de validación y conserva la información anterior.
-\\
-\hline
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+|:-------:|:---:|---|---|:---:|
+|    1    | US-01 | Visualización de landing page | Como visitante que ingresa por primera vez, quiere visualizar una página clara y ordenada, para entender el propósito del sistema. | 2 |
+|    2    | US-02 | Navegación entre secciones | Como visitante, quiere navegar entre secciones de la landing, para conocer mejor la plataforma. | 2 |
+|    3    | US-03 | Visualización de beneficios | Como visitante, quiere visualizar beneficios del sistema, para entender su valor. | 1 |
+|    4    | US-04 | Visualización de funcionalidades | Como visitante, quiere ver funcionalidades del sistema, para entender cómo funciona. | 1 |
+|    5    | US-05 | Acceso a registro | Como visitante, quiere acceder a registro desde la landing, para crear una cuenta fácilmente. | 2 |
+|    6    | US-06 | Diseño responsive | Como usuario, quiere ver la landing en cualquier dispositivo, para navegar sin problemas. | 3 |
+|    7    | US-07 | Contacto | Como visitante, quiere contactar al equipo, para resolver dudas. | 2 |
+|    8    | US-08 | Registro de negocio | Como empresa, quiere registrarse con sus datos, para acceder al sistema. | 3 |
+|    9    | US-09 | Validación de datos | Como sistema, quiere validar datos, para evitar errores. | 2 |
+|   10    | US-10 | Inicio de sesión | Como usuario, quiere iniciar sesión, para acceder a su cuenta. | 3 |
+|   11    | US-11 | Error de login | Como usuario, quiere recibir mensajes de error, para corregir datos. | 1 |
+|   12    | US-12 | Recuperación de contraseña | Como usuario, quiere recuperar contraseña, para volver a acceder. | 3 |
+|   13    | US-13 | Cierre de sesión | Como usuario, quiere cerrar sesión, para proteger su cuenta. | 1 |
+|   14    | US-14 | Persistencia de sesión | Como usuario, quiere mantener sesión activa, para evitar logins repetidos. | 3 |
+|   15    | US-15 | Creación de usuarios | Como administrador, quiere crear usuarios, para permitir acceso. | 3 |
+|   16    | US-16 | Asignación de roles | Como administrador, quiere asignar roles, para controlar permisos. | 2 |
+|   17    | US-17 | Edición de usuarios | Como administrador, quiere editar usuarios, para actualizar información. | 3 |
+|   18    | US-18 | Eliminación de usuarios | Como administrador, quiere eliminar usuarios, para mantener orden. | 2 |
+|   19    | US-19 | Restricción por roles | Como usuario, quiere acceso limitado, para evitar errores. | 3 |
+|   20    | US-20 | Lista de usuarios | Como administrador, quiere ver usuarios, para gestionarlos. | 2 |
+|   21    | US-21 | Cambio de roles | Como administrador, quiere modificar roles, para ajustar permisos. | 2 |
+|   22    | US-22 | Registro de productos perecibles | Como encargado de inventario, quiero registrar productos perecibles con sus datos principales, para mantener actualizado el catálogo de productos del negocio. | 3 |
+|   23    | US-23 | Edición de información de productos | Como encargado de inventario, quiero editar la información de un producto perecible, para corregir o actualizar sus datos cuando sea necesario. | 2 |
+|   24    | US-24 | Eliminación o desactivación de productos | Como encargado de inventario, quiero eliminar o desactivar productos que ya no se comercializan, para mantener el catálogo ordenado y vigente. | 5 |
+|   25    | US-25 | Registro de lotes de productos | Como encargado de almacén, quiero registrar lotes de productos perecibles, para controlar su ingreso, vencimiento y trazabilidad. | 2 |
+|   26    | US-26 | Visualización de stock disponible | Como encargado de inventario, quiero visualizar el stock disponible de cada producto, para tomar decisiones sobre ventas, despacho o reabastecimiento. | 3 |
+|   27    | US-27 | Alerta por vencimiento próximo | Como encargado de inventario, quiero recibir alertas de productos próximos a vencer, para priorizar su venta o despacho antes de generar pérdidas. | 3 |
+|   28    | US-28 | Control de merma de productos | Como encargado de almacén, quiero registrar productos vencidos o dañados como merma, para mantener el inventario real actualizado. | 3 |
+|   29    | US-29 | Registro de proveedores | Como encargado de compras, quiero registrar proveedores de productos perecibles, para mantener una base de datos organizada de abastecimiento. | 3 |
+|   30    | US-30 | Edición de datos de proveedores | Como encargado de compras, quiero editar los datos de un proveedor, para mantener actualizada su información de contacto y abastecimiento. | 2 |
+|   31    | US-31 | Asociación de productos con proveedores | Como encargado de compras, quiero asociar productos perecibles a sus proveedores, para identificar quién abastece cada producto del inventario. | 3 |
+|   32    | US-32 | Definición de stock mínimo | Como encargado de inventario, quiero definir un stock mínimo para cada producto, para detectar cuándo se necesita reabastecimiento. | 2 |
+|   33    | US-33 | Alerta por bajo stock | Como encargado de compras, quiero recibir alertas cuando un producto llegue a stock mínimo, para solicitar reposición oportunamente. | 5 |
+|   34    | US-34 | Generación de solicitud de reabastecimiento | Como encargado de compras, quiero generar solicitudes de reabastecimiento, para pedir productos a los proveedores correspondientes. | 2 |
+|   35    | US-35 | Seguimiento de solicitudes a proveedores | Como encargado de compras, quiero consultar el estado de las solicitudes enviadas a proveedores, para saber si están pendientes, aprobadas o atendidas. | 5 |
+|   36    | US-36 | Creación de órdenes de despacho | Como encargado de logística, quiero crear órdenes de despacho, para organizar la salida de productos perecibles hacia los comercios. | 5 |
+|   37    | US-37 | Selección de productos por lote para despacho | Como encargado de almacén, quiero seleccionar productos por lote para un despacho, para priorizar la salida de productos según vencimiento y disponibilidad. | 3 |
+|   38    | US-38 | Validación de stock antes del despacho | Como sistema, quiero validar el stock disponible antes de confirmar un despacho, para evitar preparar pedidos con cantidades insuficientes. | 5 |
+|   39    | US-39 | Asignación de vehículo para despacho | Como encargado de logística, quiero asignar un vehículo a una orden de despacho, para organizar el transporte de la carga perecible. | 2 |
+|   40    | US-40 | Asignación de transportista | Como encargado de logística, quiero asignar un transportista a una orden de despacho, para definir al responsable de la entrega. | 2 |
+|   41    | US-41 | Confirmación de salida de carga | Como encargado de almacén, quiero confirmar la salida de la carga, para registrar oficialmente que los productos salieron del almacén. | 2 |
+|   42    | US-42 | Consulta de despachos programados | Como encargado de logística, quiero visualizar los despachos programados, para monitorear qué cargas están pendientes, preparadas o en tránsito. | 5 |
+|   43    | US-43 | Asignación de ruta hacia comercios | Como encargado de logística de una empresa distribuidora, quiero asignar una ruta y un vehículo a un despacho, para organizar la entrega diaria a los comerciantes. | 3 |
+|   44    | US-44 | Monitoreo de ruta de distribución | Como gerente de operaciones de una distribuidora, quiero visualizar en un mapa la ubicación del camión, para asegurar que la mercadería perecible llegue a tiempo. | 8 |
+|   45    | US-45 | Registro de llegada al comercio | Como transportista de una distribuidora, quiero registrar mi llegada al local del comerciante, para documentar el cumplimiento de los tiempos logísticos. | 2 |
+|   46    | US-46 | Prueba de entrega de productos (POD) | Como comerciante minorista, quiero firmar digitalmente la recepción de la carga, para dejar constancia de que los productos llegaron en las condiciones acordadas. | 3 |
+|   47    | US-47 | Registro de rechazo de mercadería | Como comerciante mayorista, quiero poder registrar el rechazo de productos que llegaron dañados, para que la distribuidora gestione la nota de crédito. | 3 |
+|   48    | US-48 | Reasignación por rechazo total | Como encargado de logística de una distribuidora, quiero reasignar el retorno de un despacho rechazado totalmente, para devolverlo al almacén de mermas. | 5 |
+|   49    | US-49 | Historial de despachos recibidos | Como comerciante minorista, quiero visualizar un historial de todos los despachos recibidos, para conciliar mis facturas con la distribuidora. | 2 |
+|   50    | US-50 | Verificación de cadena de frío | Como comerciante mayorista, quiero ver las métricas de temperatura del camión antes de descargar, para asegurar la calidad de los productos. | 3 |
+|   51    | US-51 | Alerta de riesgo térmico en ruta | Como monitor de calidad de una distribuidora, quiero recibir una alerta si la temperatura excede los límites, para evitar mermas antes de llegar al minorista. | 5 |
+|   52    | US-52 | Notificación de proximidad al local | Como comerciante minorista, quiero recibir un aviso cuando el camión distribuidor esté cerca, para preparar mi almacén frigorífico. | 3 |
+|   53    | US-53 | Alerta por pérdida de telemetría | Como empresa distribuidora, quiero saber si un sensor pierde señal, para evitar puntos ciegos en la cadena de frío. | 5 |
+|   54    | US-54 | Reporte diario de incidencias térmicas | Como gerente de operaciones de una distribuidora, quiero recibir un reporte automático diario con rupturas de frío, para evaluar el desempeño de la flota. | 3 |
+|   55    | US-55 | Alerta de mantenimiento frigorífico | Como coordinador de flota de una distribuidora, quiero recibir una alerta si un vehículo presenta variaciones térmicas constantes. | 5 |
+|   56    | US-56 | Notificación de merma al comerciante | Como comerciante mayorista, quiero recibir una notificación si mi pedido sufrió una ruptura de frío confirmada en ruta. | 2 |
+|   57    | US-57 | Autenticación de sistemas B2B | Como developer de una distribuidora, quiero enviar credenciales al API para obtener un token JWT, para integrar nuestro ERP de forma segura. | 5 |
+|   58    | US-58 | Ingesta continua de telemetría | Como developer de una distribuidora, quiero ingestar datos de temperatura desde los camiones, para mantener el historial térmico actualizado. | 8 |
+|   59    | US-59 | Sincronización de trazabilidad | Como developer de un comerciante mayorista, quiero consultar el estado de un despacho vía API, para verlo directamente en nuestro propio ERP. | 5 |
+|   60    | US-60 | Webhooks de alertas para comercios | Como developer, quiero configurar webhooks para que los sistemas de la distribuidora y mayorista reciban notificaciones automáticas ante fallas térmicas. | 8 |
+|   61    | US-61 | Descarga de Prueba de Entrega (POD) | Como developer de un comerciante mayorista, quiero descargar el comprobante de entrega firmado vía API. | 5 |
+|   62    | US-62 | Sincronización de catálogo perecible | Como developer de un comerciante minorista, quiero consumir el catálogo de productos disponibles vía API. | 5 |
+|  $ 63   | US-63 | Envío de reclamo vía API | Como developer de un comerciante mayorista, quiero enviar un ticket de reclamo por mercadería dañada a través del API. | 5 |
 
-US-21 &
-Registro de lotes con fecha de vencimiento &
-Como encargado de almacén de una empresa distribuidora de productos perecibles, quiero registrar lotes con fecha de ingreso, fecha de vencimiento y cantidad disponible, para controlar la vida útil de la mercadería almacenada. &
-\textbf{Escenario 1: Registro exitoso de lote}\newline
-\textbf{Dado que} existe un producto perecible registrado\newline
-\textbf{Cuando} el encargado registra un lote con cantidad, fecha de ingreso y fecha de vencimiento válidas\newline
-\textbf{Entonces} el sistema asocia el lote al producto y actualiza el stock disponible.\newline\newline
-\textbf{Escenario 2: Fecha de vencimiento inválida}\newline
-\textbf{Dado que} el encargado intenta registrar un lote\newline
-\textbf{Cuando} ingresa una fecha de vencimiento anterior a la fecha de ingreso\newline
-\textbf{Entonces} el sistema rechaza el registro y muestra una alerta de validación.
-\\
-\hline
+![product1](../assets/img/product1.png)
 
-US-22 &
-Consulta de stock disponible &
-Como dueño de un minimarket, quiero consultar el stock disponible por producto, para saber qué mercadería puedo vender, reponer o retirar antes de que genere pérdidas. &
-\textbf{Escenario 1: Consulta de stock existente}\newline
-\textbf{Dado que} existen productos registrados en el inventario\newline
-\textbf{Cuando} el dueño del minimarket consulta el stock disponible\newline
-\textbf{Entonces} el sistema muestra la cantidad actual por producto y lote.\newline\newline
-\textbf{Escenario 2: Producto sin stock}\newline
-\textbf{Dado que} un producto registrado no tiene unidades disponibles\newline
-\textbf{Cuando} el usuario consulta su disponibilidad\newline
-\textbf{Entonces} el sistema muestra el producto como agotado.
-\\
-\hline
+![product2](../assets/img/product2.png)
 
-US-23 &
-Registro de entradas de inventario &
-Como encargado de almacén de una empresa distribuidora, quiero registrar la entrada de nuevos productos o lotes, para mantener actualizado el inventario digital frente al inventario físico. &
-\textbf{Escenario 1: Entrada registrada correctamente}\newline
-\textbf{Dado que} ingresa nueva mercadería al almacén\newline
-\textbf{Cuando} el encargado registra la entrada en FreshKargo\newline
-\textbf{Entonces} el sistema incrementa el stock del producto o lote correspondiente.\newline\newline
-\textbf{Escenario 2: Entrada con cantidad inválida}\newline
-\textbf{Dado que} el encargado registra una entrada de inventario\newline
-\textbf{Cuando} ingresa una cantidad menor o igual a cero\newline
-\textbf{Entonces} el sistema rechaza la operación y solicita una cantidad válida.
-\\
-\hline
+![product3](../assets/img/product3.png)
 
-US-24 &
-Registro de salidas de inventario &
-Como administrador de un minimarket, quiero registrar salidas de productos por venta, devolución o merma, para mantener actualizado el stock real del negocio. &
-\textbf{Escenario 1: Salida registrada correctamente}\newline
-\textbf{Dado que} existe stock disponible de un producto o lote\newline
-\textbf{Cuando} el administrador registra una salida válida\newline
-\textbf{Entonces} el sistema descuenta la cantidad correspondiente del inventario.\newline\newline
-\textbf{Escenario 2: Salida sin stock suficiente}\newline
-\textbf{Dado que} el administrador intenta registrar una salida\newline
-\textbf{Cuando} la cantidad solicitada supera el stock disponible\newline
-\textbf{Entonces} el sistema impide la operación e informa que no hay stock suficiente.
-\\
-\hline
+![product4](../assets/img/product4.png)
 
-US-25 &
-Identificación de productos próximos a vencer &
-Como empresa distribuidora de productos perecibles, quiero identificar productos próximos a vencer, para priorizar su salida, promoción o retiro antes de que se conviertan en merma. &
-\textbf{Escenario 1: Productos próximos a vencer encontrados}\newline
-\textbf{Dado que} existen lotes registrados con fecha de vencimiento cercana\newline
-\textbf{Cuando} el usuario revisa la sección de vencimientos\newline
-\textbf{Entonces} el sistema muestra los productos próximos a vencer ordenados por fecha.\newline\newline
-\textbf{Escenario 2: Sin productos próximos a vencer}\newline
-\textbf{Dado que} no existen lotes cercanos a su fecha de vencimiento\newline
-\textbf{Cuando} el usuario revisa la sección de vencimientos\newline
-\textbf{Entonces} el sistema informa que no hay productos en riesgo de vencimiento.
-\\
-\hline
-
-\textbf{EP05} &
-\textbf{Control de reabastecimiento y proveedores} &
-Como empresa distribuidora o comercio minorista, quiero gestionar proveedores y necesidades de reposición, para evitar quiebres de stock, compras innecesarias y retrasos en el abastecimiento. &
-\\
-\hline
-
-US-26 &
-Registro de proveedores &
-Como responsable de compras de una empresa distribuidora de productos perecibles, quiero registrar proveedores con sus datos de contacto y productos ofrecidos, para organizar las fuentes de abastecimiento del negocio. &
-\textbf{Escenario 1: Registro exitoso de proveedor}\newline
-\textbf{Dado que} el responsable de compras necesita agregar un nuevo proveedor\newline
-\textbf{Cuando} registra datos válidos como nombre, contacto y tipo de producto\newline
-\textbf{Entonces} el sistema guarda al proveedor en la lista de proveedores disponibles.\newline\newline
-\textbf{Escenario 2: Registro incompleto}\newline
-\textbf{Dado que} el responsable intenta registrar un proveedor\newline
-\textbf{Cuando} deja campos obligatorios vacíos\newline
-\textbf{Entonces} el sistema muestra mensajes de validación y no guarda el proveedor.
-\\
-\hline
-
-US-27 &
-Edición de datos de proveedores &
-Como administrador de un minimarket, quiero actualizar los datos de mis proveedores, para mantener vigente la información de contacto, condiciones de entrega y productos que ofrecen. &
-\textbf{Escenario 1: Actualización exitosa}\newline
-\textbf{Dado que} existe un proveedor registrado\newline
-\textbf{Cuando} el administrador modifica datos válidos y guarda los cambios\newline
-\textbf{Entonces} el sistema actualiza la información del proveedor.\newline\newline
-\textbf{Escenario 2: Información inválida}\newline
-\textbf{Dado que} el administrador edita los datos del proveedor\newline
-\textbf{Cuando} ingresa un correo, teléfono o dato obligatorio inválido\newline
-\textbf{Entonces} el sistema muestra una advertencia y no aplica los cambios.
-\\
-\hline
-
-US-28 &
-Asociación de productos con proveedores &
-Como responsable de compras de una empresa distribuidora, quiero asociar productos perecibles con sus proveedores, para identificar rápidamente a quién solicitar reabastecimiento cuando el stock sea bajo. &
-\textbf{Escenario 1: Asociación exitosa}\newline
-\textbf{Dado que} existen productos y proveedores registrados\newline
-\textbf{Cuando} el responsable asocia un producto con uno o más proveedores\newline
-\textbf{Entonces} el sistema guarda la relación entre producto y proveedor.\newline\newline
-\textbf{Escenario 2: Producto o proveedor inexistente}\newline
-\textbf{Dado que} el responsable intenta crear una asociación\newline
-\textbf{Cuando} el producto o proveedor seleccionado no existe\newline
-\textbf{Entonces} el sistema impide la asociación y muestra un mensaje de error.
-\\
-\hline
-
-US-29 &
-Visualización de productos con stock bajo &
-Como dueño de un minimarket, quiero visualizar productos con stock bajo, para planificar compras antes de quedarme sin mercadería disponible para la venta. &
-\textbf{Escenario 1: Productos con stock bajo}\newline
-\textbf{Dado que} existen productos con stock mínimo definido\newline
-\textbf{Cuando} el stock disponible cae por debajo del límite establecido\newline
-\textbf{Entonces} el sistema muestra el producto en la lista de reabastecimiento sugerido.\newline\newline
-\textbf{Escenario 2: Sin productos para reabastecer}\newline
-\textbf{Dado que} todos los productos tienen stock suficiente\newline
-\textbf{Cuando} el usuario revisa la sección de reabastecimiento\newline
-\textbf{Entonces} el sistema informa que no existen productos pendientes de reposición.
-\\
-\hline
-
-US-30 &
-Generación de solicitud de reabastecimiento &
-Como responsable de compras de una empresa distribuidora, quiero generar solicitudes de reabastecimiento para productos con stock bajo, para iniciar el proceso de compra con el proveedor correspondiente. &
-\textbf{Escenario 1: Solicitud generada correctamente}\newline
-\textbf{Dado que} existe un producto con stock bajo y proveedor asociado\newline
-\textbf{Cuando} el responsable genera una solicitud de reabastecimiento\newline
-\textbf{Entonces} el sistema crea la solicitud con producto, cantidad sugerida y proveedor seleccionado.\newline\newline
-\textbf{Escenario 2: Producto sin proveedor asociado}\newline
-\textbf{Dado que} un producto requiere reabastecimiento\newline
-\textbf{Cuando} no tiene proveedor asociado\newline
-\textbf{Entonces} el sistema advierte que debe asignarse un proveedor antes de generar la solicitud.
-\\
-\hline
-
-US-31 &
-Consulta de historial de reabastecimiento &
-Como administrador de negocio, quiero consultar el historial de solicitudes de reabastecimiento, para revisar compras anteriores y evaluar la frecuencia de reposición de productos. &
-\textbf{Escenario 1: Historial disponible}\newline
-\textbf{Dado que} existen solicitudes de reabastecimiento registradas\newline
-\textbf{Cuando} el administrador consulta el historial\newline
-\textbf{Entonces} el sistema muestra las solicitudes realizadas con fecha, producto, cantidad y proveedor.\newline\newline
-\textbf{Escenario 2: Sin historial registrado}\newline
-\textbf{Dado que} no existen solicitudes previas\newline
-\textbf{Cuando} el administrador consulta el historial\newline
-\textbf{Entonces} el sistema muestra un mensaje indicando que aún no hay registros.
-\\
-\hline
-
-US-32 &
-Priorización de productos para reabastecimiento &
-Como comercio minorista, quiero priorizar los productos que deben reabastecerse según stock bajo y demanda reciente, para comprar primero la mercadería más necesaria. &
-\textbf{Escenario 1: Priorización generada correctamente}\newline
-\textbf{Dado que} existen productos con distintos niveles de stock y movimiento de salida\newline
-\textbf{Cuando} el usuario revisa la prioridad de reabastecimiento\newline
-\textbf{Entonces} el sistema muestra primero los productos con mayor necesidad de reposición.\newline\newline
-\textbf{Escenario 2: Datos insuficientes para priorizar}\newline
-\textbf{Dado que} no existen movimientos de inventario registrados\newline
-\textbf{Cuando} el usuario revisa la prioridad de reabastecimiento\newline
-\textbf{Entonces} el sistema muestra la priorización solo en función del stock disponible.
-\\
-\hline
-
-\textbf{EP06} &
-\textbf{Gestión de carga y despacho} &
-Como empresa distribuidora de productos perecibles, quiero organizar la carga y el despacho de mercadería, para preparar entregas ordenadas, reducir errores operativos y asegurar una distribución eficiente. &
-\\
-\hline
-
-US-33 &
-Creación de orden de despacho &
-Como jefe de operaciones logísticas de una empresa distribuidora de productos perecibles, quiero crear órdenes de despacho asociando productos, lotes, cantidades y destino, para organizar la salida de mercadería desde el almacén. &
-\textbf{Escenario 1: Creación exitosa de despacho}\newline
-\textbf{Dado que} existen productos y lotes disponibles en inventario\newline
-\textbf{Cuando} el jefe de operaciones registra una orden con destino, productos y cantidades válidas\newline
-\textbf{Entonces} el sistema crea la orden de despacho y reserva las cantidades correspondientes.\newline\newline
-\textbf{Escenario 2: Cantidad no disponible}\newline
-\textbf{Dado que} el usuario intenta crear una orden de despacho\newline
-\textbf{Cuando} la cantidad solicitada supera el stock disponible\newline
-\textbf{Entonces} el sistema impide la creación del despacho e informa la falta de stock.
-\\
-\hline
-
-US-34 &
-Selección de lotes para despacho &
-Como encargado de almacén de una empresa distribuidora, quiero seleccionar los lotes que serán enviados en un despacho, para priorizar productos próximos a vencer y reducir pérdidas por caducidad. &
-\textbf{Escenario 1: Selección de lote válida}\newline
-\textbf{Dado que} existen lotes disponibles para un producto\newline
-\textbf{Cuando} el usuario selecciona los lotes para el despacho\newline
-\textbf{Entonces} el sistema registra los lotes seleccionados en la orden.\newline\newline
-\textbf{Escenario 2: Lote no disponible}\newline
-\textbf{Dado que} el usuario intenta seleccionar un lote\newline
-\textbf{Cuando} el lote no tiene stock disponible o está vencido\newline
-\textbf{Entonces} el sistema impide seleccionarlo para el despacho.
-\\
-\hline
-
-US-36 &
-Asignación de carga para distribución &
-Como responsable de despacho de una empresa distribuidora, quiero asignar productos y lotes a una carga de distribución, para preparar correctamente la mercadería antes de su salida del almacén. &
-\textbf{Escenario 1: Asignación correcta de carga}\newline
-\textbf{Dado que} existe una orden de despacho registrada\newline
-\textbf{Cuando} el usuario asigna productos, lotes y cantidades a la carga correspondiente\newline
-\textbf{Entonces} el sistema registra la carga y la deja lista para distribución.\newline\newline
-\textbf{Escenario 2: Carga incompleta}\newline
-\textbf{Dado que} el usuario intenta confirmar una carga\newline
-\textbf{Cuando} faltan productos, lotes o cantidades obligatorias\newline
-\textbf{Entonces} el sistema muestra una alerta e impide confirmar la carga.
-\\
-\hline
-
-US-37 &
-Asignación de responsable de despacho &
-Como jefe de operaciones logísticas de una empresa distribuidora, quiero asignar un responsable a cada despacho, para tener trazabilidad interna sobre quién prepara y supervisa la salida de productos. &
-\textbf{Escenario 1: Responsable asignado correctamente}\newline
-\textbf{Dado que} existe una orden de despacho pendiente\newline
-\textbf{Cuando} el jefe de operaciones asigna un responsable disponible\newline
-\textbf{Entonces} el sistema registra al responsable asociado al despacho.\newline\newline
-\textbf{Escenario 2: Responsable no disponible}\newline
-\textbf{Dado que} el usuario intenta asignar un responsable\newline
-\textbf{Cuando} el responsable no está disponible o no tiene permisos\newline
-\textbf{Entonces} el sistema muestra un mensaje de restricción.
-\\
-\hline
-
-US-38 &
-Confirmación de salida de carga &
-Como responsable de despacho de una empresa distribuidora, quiero confirmar la salida de una carga, para registrar oficialmente que los productos salieron del almacén hacia su destino. &
-\textbf{Escenario 1: Salida confirmada}\newline
-\textbf{Dado que} una carga está completa y validada\newline
-\textbf{Cuando} el responsable confirma la salida\newline
-\textbf{Entonces} el sistema cambia el estado del despacho a “en distribución”.\newline\newline
-\textbf{Escenario 2: Carga no validada}\newline
-\textbf{Dado que} una carga tiene información incompleta\newline
-\textbf{Cuando} el usuario intenta confirmar la salida\newline
-\textbf{Entonces} el sistema bloquea la confirmación hasta completar la validación.
-\\
-\hline
-
-US-39 &
-Consulta de estado de preparación de despacho &
-Como jefe de operaciones logísticas de una empresa distribuidora, quiero consultar el estado de preparación de cada despacho, para saber si una carga está pendiente, completa o lista para salir. &
-\textbf{Escenario 1: Consulta de estado disponible}\newline
-\textbf{Dado que} existen órdenes de despacho registradas\newline
-\textbf{Cuando} el usuario consulta el estado de preparación\newline
-\textbf{Entonces} el sistema muestra si el despacho está pendiente, en preparación o listo para salir.\newline\newline
-\textbf{Escenario 2: Despacho no encontrado}\newline
-\textbf{Dado que} el usuario busca un despacho específico\newline
-\textbf{Cuando} el código o filtro ingresado no coincide con ningún registro\newline
-\textbf{Entonces} el sistema informa que no se encontraron resultados.
-\\
-\hline
-
-US-40 &
-Validación de productos antes del despacho &
-Como responsable de despacho de una empresa distribuidora, quiero validar los productos antes de su salida, para confirmar que las cantidades, lotes y condiciones coinciden con la orden de despacho. &
-\textbf{Escenario 1: Validación exitosa de despacho}\newline
-\textbf{Dado que} una carga fue preparada para distribución\newline
-\textbf{Cuando} el responsable valida productos, lotes y cantidades contra la orden\newline
-\textbf{Entonces} el sistema marca el despacho como validado y listo para salir.\newline\newline
-\textbf{Escenario 2: Diferencia entre carga y orden}\newline
-\textbf{Dado que} una carga contiene diferencias en productos, lotes o cantidades\newline
-\textbf{Cuando} el responsable intenta validar el despacho\newline
-\textbf{Entonces} el sistema muestra las diferencias encontradas y bloquea la salida hasta corregirlas.
-\\
-\hline
-
-\end{longtable}
-
+*Enlace al Product Backlog en Jira:*  
+[Jira - Freshkargo Backlog](https://rodrigogamerpro14.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiODUyZTM5NzM4ZWUzNGI5ZGJlYjk2OWYyNjU0NjY2M2UiLCJwIjoiaiJ9)
