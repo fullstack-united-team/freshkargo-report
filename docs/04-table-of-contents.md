@@ -34,4 +34,10 @@
 - [2.4. Big Picture Event Storming](#big-picture-event-storming)
 - [2.5. Ubiquitous Language](#ubiquitous-language)
 
+[Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+
+- [3.1. User Stories](#user-stories)
+- [3.2. Impact Mapping](#impact-mapping)
+- [3.3. Product Backlog](#product-backlog)
+
 <div style="page-break-after: always"></div>
